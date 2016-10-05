@@ -68,28 +68,97 @@ var osnoveTurizmaPitanja = [{
 
 var organizacijaPitanja = [{
     pitanje: "Što je organizacija?",
-    odgovor: "prvi odgovor"
+    odgovor: "smišljena ljudska aktivnost koja ima dužnost stavljanja u funkciju više organa zbog obavljanja određenog zadatka (ili postizanje nekog cilja)"
 }, {
     pitanje: "Koja je svrha organizacije?",
-    odgovor: "drugi odgovor"
+    odgovor: "omogućiti da se što jednostavnije, brže i jeftinije ostvari određeni zadatak, bilo na području proizvodnje ili pružanja usluga"
 }, {
-    pitanje: "Što je organizacija rada i kako se provodi?",
-    odgovor: "treći odgovor"
+    pitanje: "Kako teče proces organizacije rada u nekom poduzeću?",
+    odgovor: "organizacija rada počinje organiziranjem svakog pojedinog radnog mjesta, a zatim međusobnim usklađivanjem svih radnih mjesta u odjelu, pogonu i nakon toga usklađivanje svih odjela u ugostiteljskom objektu"
 }, {
-    pitanje: "Koji su elementi organizacije rada?",
-    odgovor: "treći odgovor"
+    pitanje: "Koji su elementi organizacije rada? (5 elemenata)",
+    odgovor: "ljudi, sredstva za rad, prostor, predmeti rada i vrijeme"
 }, {
     pitanje: "Što je poduzeće?",
-    odgovor: "treći odgovor"
+    odgovor: "samostalna gospodarska organizacija koju je osnovao (ili kupio) njezin vlasnik kako bi obavljao neku djelatnost i ostvarivao zaradu (dobit)"
 }, {
     pitanje: "Na čemu se zasniva organizacija poslovanja poduzeća?",
-    odgovor: "treći odgovor"
+    odgovor: "organizacija poslovanja poduzeća se zasniva na organizaciji rada na koju se onda nadovezuju ostale funkcije poduzeća – proizvodna, uslužna, nabavna, financijska, kadrovska, razvojna, rukovodna, kontrolna i dr."
 }, {
-    pitanje: "Što je formalna a što neformalna organizacija?",
-    odgovor: "treći odgovor"
+    pitanje: "Što je formalna organizacija?",
+    odgovor: "ona organizacija koja je određena nekim službenim aktom koji je donijelo neko službeno tijelo (npr. upravni odbor ili direktor)" + "<br>" + "formalna organizacija se temelji na stvarnim potrebama i iskustvu iz prošlih vremena"
+}, {
+    pitanje: "Što je neformalna organizacija?",
+    odgovor: "ona organizacija koju nije unaprijed propisalo i odobrilo odgovarajuće upravljačko tijelo, već se silom prilika stvara po potrebi"
 }, {
     pitanje: "Navedi primjer za neformalnu organizaciju rada.",
-    odgovor: "treći odgovor"
+    odgovor: "organizacija rada koja nastaje spontano - npr. kada neki radnik izostane s posla ili kada nenajavljeno dođe velika skupina gostiju u restoran ili hotel – u tom slučaju sobarica će pospremiti 30 soba, konobar će poslužiti  50 gostiju, a kuhar će spremiti 80 obroka i sl."
+}, {
+    pitanje: "Tko rukovodi organizacijom rada u jednom odjelu?",
+    odgovor: "Voditelj odjela."
+}, {
+    pitanje: "Tko rukovodi organizacijom cijelog poduzeća?",
+    odgovor: "Direktor (upravitelj)."
+}, {
+    pitanje: "Što je ugostiteljstvo?",
+    odgovor: "uslužna i proizvodna djelatnost koja se bavi prodajom, pripremom i posluživanjem raznovrsne hrane, napitaka i pića te  pružanjem usluga smještaja u posebno pripremljenim sobama i apartmanima te pružanjem usluga zabave i rekreacije i njihovom prodajom u ugostiteljskom objektu"
+}, {
+    pitanje: "Je li ugostiteljstvo proizvodna ili uslužna djelatnost?",
+    odgovor: "ugostiteljstvo je i proizvodna i uslužna djelatnost koja zahtjeva puno ljudskog rada jer se u proizvodnji i posluživanju koristi malo strojnog rada"
+}, {
+    pitanje: "Koje se ugostiteljske djelatnosti? (4)",
+    odgovor: "hotelijerstvo, restauraterstvo, barovi i animacija"
+}, {
+    pitanje: "Što je turizam?",
+    odgovor: "turizam označava putovanje ljudi i njihov boravak duže ili kraće vrijeme u nekom mjestu koje nije mjesto njihova stalnog boravka"
+}, {
+    pitanje: "Kakva je uloga ugostiteljstva u turizmu?",
+    odgovor: "ugostiteljstvo čini receptivu (sposobnost prihvaćanja gostiju) turizma nekog mjesta – materijalna baza turizma"
+}, {
+    pitanje: "Što su receptivne a što emitivne turističke zemlje?",
+    odgovor: "receptivne turističke zemlje – zemlje koje primaju goste" + "<br>" + "emitivne turističke zemlje – zemlje iz kojih dolaze gosti"
+}, {
+    pitanje: "Je li Hrvatska receptivna ili emitivna turistička zemlja? Objasni.",
+    odgovor: "receptivna jer više gostiju dolazi u Hrvatsku na odmor nego što iz Hrvatske putuje u druge zemlje"
+}, {
+    pitanje: "Što su putničke agencije?",
+    odgovor: "putničke agencije su posrednici između ugostiteljskih poslovnih jedinica (hotela, pansiona, hotelskih naselja, apartmana…) i potencijalnih gostiju"
+}, {
+    pitanje: "Koje su vrste ugovora između ugostiteljskih objekata i putničkih agencija? (3)",
+    odgovor: "okvirni ugovor („ugovor na osnovi zatražene i potvrđene rezervacije“)" + "<br>" + "ugovor o alotmanu (alotmanski ugovor)" + "<br>" + "ugovor o zakupu kapaciteta („fiksni ugovor“ i „ugovor puno za prazno“)"
+}, {
+    pitanje: "Objasni okvirni ugovor („ugovor na osnovi zatražene i potvrđene rezervacije“).",
+    odgovor: "- agencija nalazi goste, uzima proviziju i naplaćuje gostima boravak u hotelu" + "<br>" + "- nakon plaćanja gostu izdaje vaučer – dokument o uplaćenoj rezervaciji, a kopiju šalje hotelu" + "<br>" + "- gost pri dolasku u hotel predaje vaučer hotelu i na taj način „plaća“ uslugu" + "<br>" + "- nakon iskorištene usluge (odlaska gostiju) hotel šalje agenciji račun vaučer na naplatu"
+}, {
+    pitanje: "Objasni ugovor o alotmanu.",
+    odgovor: "- hotelijer se obvezuje da će u ugovorenom vremenu dati agenciji na raspolaganje određeni broj soba i traženih usluga na raspolaganje uz ugovorenu proviziju" + "<br>" + "- agencija može neke sobe ne popunit, ali treba na vrijeme obavijestiti hotel"
+}, {
+    pitanje: "Objasni ugovor o zakupu kapaciteta („fiksni ugovor“ i „ugovor puno za prazno“).",
+    odgovor: "- agencija uzima u zakup cijeli hotel ili samo određeni broj soba na neko vrijeme" + "<br>" + "- agencija plaća zakupljene kapacitete bez obzira jesu bili korišteni" + "<br>" + "ovaj ugovor se najčešće sklapa kada je agencija sigurna da će popuniti sve kapacitete – npr. za vrijeme održavanja kongresa, u vrhuncu turističke sezone, za vrijeme sportskih događaja i sl."
+}, {
+    pitanje: "Što je provizija putničke agencije?",
+    odgovor: "provizija je svota koju ugostiteljski objekt odobrava u postotku ili fiksnom iznosu za vrijednost pruženih usluga gostima koje je u ugostiteljski objekt uputila agencija"
+}, {
+    pitanje: "Što je turističko posredovanje?",
+    odgovor: "poslovni odnos između turističke agencije i ugostiteljskog objekta naziva se turističko posredovanje"
+}, {
+    pitanje: "Što je trgovina?",
+    odgovor: "posredništvo između proizvođača i potrošača"
+}, {
+    pitanje: "Kako ugostiteljstvo ovisi o trgovini?",
+    odgovor: "- ugostiteljstvo ovisi o trgovini kod nabave robe za proizvodnju" + "<br>" + "- nestašica pojedinih roba može značajno utjecati na ugostiteljsku ponudu"
+}, {
+    pitanje: "Kako su obrti vezani za ugostiteljstvo? Nabroj neke primjere.",
+    odgovor: "- uglavnom su vezanim za održavanje ugostiteljskih objekata i dobavljanje namirnica" + "<br>" + "- npr. popravak vodoinstalacija, elektroinstalacija, slastičari, pekari, praonice rublja, održavanje okoliša…"
+}, {
+    pitanje: "Koja je razlika između obrta i industrije?",
+    odgovor: "za razliku od obrta, industrija zapošljava veći broj radnika i proizvodi serijski veći broj proizvoda"
+}, {
+    pitanje: "Koja industrija je najbitnija za ugostiteljstvo?",
+    odgovor: "industrija hrane i pića"
+}, {
+    pitanje: "Što je to hotelska industrija?",
+    odgovor: "hoteli s više od 1000 postelja, restauracije s većim brojem sjedala i dr."
 }];
 
 var marketingPitanja = [{
