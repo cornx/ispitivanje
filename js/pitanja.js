@@ -67,13 +67,28 @@ var osnoveTurizmaPitanja = [{
 }];
 
 var organizacijaPitanja = [{
-    pitanje: "Prvo pitanje?",
+    pitanje: "Što je organizacija?",
     odgovor: "prvi odgovor"
 }, {
-    pitanje: "Drugo pitanje",
+    pitanje: "Koja je svrha organizacije?",
     odgovor: "drugi odgovor"
 }, {
-    pitanje: "Treće pitanje",
+    pitanje: "Što je organizacija rada i kako se provodi?",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Koji su elementi organizacije rada?",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Što je poduzeće?",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Na čemu se zasniva organizacija poslovanja poduzeća?",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Što je formalna a što neformalna organizacija?",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Navedi primjer za neformalnu organizaciju rada.",
     odgovor: "treći odgovor"
 }];
 
