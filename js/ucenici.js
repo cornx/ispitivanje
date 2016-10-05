@@ -1,4 +1,4 @@
-var osnoveTurizmaImena = ["Danijel Bagić", "Karlo", "Ivan Šarić", "Denis", "Celin"];
-var organizacijaImena = ["Ime Prezime"];
-var marketingImena = ["Josip Fabijanić", "Marija Kurilić", "Antonio", "Damir Bagić", "Sara Kuzmanić", "Petra Vrban", "Nikolina", "Mateo"];
-var turistickaGeoImena = ["Ime Prezime"];
+var osnoveTurizmaImena = ["Danijel", "Karlo", "Ivan", "Denis", "Celin"];
+var organizacijaImena = ["Iva","Dora","Petar","Luka","Mateo","Hrvoje"];
+var marketingImena = ["Josip", "Marija", "Antonio", "Damir", "Sara", "Petra", "Nikolina", "Mateo"];
+var turistickaGeoImena = ["Damir","Sara", "Mateo", "Petra", "Marija"];

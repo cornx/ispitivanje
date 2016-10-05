@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Ni po babi ni po stričevima</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,17 +34,17 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje | Osnove turizma</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;2.u &ndash; Organizacija poslovanja poduzeća u ugostiteljstvu</a>
             </div>
             <ul class="nav nav-pills desno">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">1.u</a>
+                    <a class="nav-link bg-primary" href="index.html">1.u</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link bg-success" href="#">2.u</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link bg-danger" href="#">3.u</a>
+                    <a class="nav-link bg-danger" href="marketing.html">3.u</a>
                 </li>
             </ul>
             <!-- /.navbar-collapse -->
@@ -53,19 +53,19 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container-fluid ">
-        <div class="row">
+    <div class="container">
+        <!--  <div class="row">
             <div class="col-xs-12 naslov">
                 <h1>Osnove turizma</h1></div>
-        </div>
+        </div>-->
         <div class="row">
             <div class="col-xs-4 sredina">
-                <h3 class="sredina">Danas pitamo</h3>
+                <h4 class="lijevo">Danas pitamo:</h4>
                 <div id="ucenik">&nbsp;</div>
-                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="osnoveTurizmaProzovi();">PROZOVI UČENIKA</button>
+                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(organizacijaImena);">PROZOVI UČENIKA</button>
                 <div class="lijevo">
-                    <h3 id="jos-nisu-pitani"> Još nisu ispitani</h3>
-                    <h5 id="neispitani" class="osnoveTurizma"></h5></div>
+                    <h4 id="jos-nisu-pitani"> Još nisu ispitani</h4>
+                    <h5 id="neispitani"></h5></div>
 
                 <div class="row">
                     <div class="card card-outline-primary">
@@ -88,16 +88,16 @@
                 <div class="granica"> </div>
             </div>
             <div class="col-xs-7 sredina">
-                <h3 class="lijevo">Pitanje glasi:</h3>
+                <h4 class="lijevo">Pitanje glasi:</h4>
                 <div id="pitanje">&nbsp;</div>
 
-                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje();">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i> </span>
+                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(organizacijaPitanja);">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i> </span>
                 <div class="lijevo pokazi-odgovor">
-                    <h3 id="nema-odgovora">Odgovor:</h3>
+                    <h4 id="nema-odgovora">Odgovor:</h4>
                     <div id="odgovor">&nbsp;</div>
                 </div>
                 <div class="row">
-                    <h3 class="lijevo">Uspjeh u odgovaranju:</h3>
+                    <h4 class="lijevo">Uspjeh u odgovaranju:</h4>
                     <div class="odgovor o1"></div>
                     <div class="odgovor o2"></div>
                     <div class="odgovor o3"></div>
@@ -108,10 +108,10 @@
                 </div>
             </div>
         </div>
-    <div class="row col-xs-12 footer">
-        <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
-        <p class="desno sivo"><span id="sat"></span><span id="max"> </span> </p>
-    </div>
+        <div class="row col-xs-12 footer">
+            <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
+            <p class="desno sivo"><span id="sat"></span><span id="max"> </span> </p>
+        </div>
     </div>
     <!-- /.container -->
 
@@ -126,8 +126,10 @@
     <script src="js/odgovori.js"></script>
     <script src="js/pitanja.js"></script>
     <script src="js/arrayOdaberi.js"></script>
-    <!--<script src="js/script.js"></script>-->
-
+    <script>
+        document.querySelector("#neispitani").innerHTML = organizacijaImena.join(", ");
+        document.querySelector("#max").innerHTML = organizacijaPitanja.length;
+    </script>
 </body>
 
 </html>

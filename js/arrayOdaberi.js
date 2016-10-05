@@ -1,23 +1,20 @@
-document.querySelector(".osnoveTurizma").innerHTML = osnoveTurizmaImena.join(", "); // za početni prikaz svih imena 
-document.querySelector("#max").innerHTML = osnoveTurizmaPitanja.length; // za prikaz ukupnog broja pitanja na početku pokretanja aplikacie
-
-
-function odaberiPitanje() {
-
+// odaberi pitanja univerzalno
+function odaberiPitanje(premetPitanja) {
+    var predmet = premetPitanja;
     // deklariranje varijabli
     var min = 0,
-        max = osnoveTurizmaPitanja.length - 1, // maksimalan broj učenika u arrayu 
+        max = predmet.length - 1, // maksimalan broj učenika u arrayu 
         nasumicno = Math.floor(Math.random() * (max - min + 1)) + min, // random broj
-        odabrano = osnoveTurizmaPitanja[nasumicno]; // broj učenika po redu (baza 1) i ime učenika
-    
+        odabrano = predmet[nasumicno]; // broj učenika po redu (baza 1) i ime učenika
+
     // DOM elementi
     var divOdgovor = document.querySelector("#odgovor"),
         divPitanje = document.querySelector("#pitanje"),
         nemaOdgovora = document.querySelector("#nema-odgovora"),
         maxFooter = document.querySelector("#max");
 
-    if (osnoveTurizmaPitanja.length > 0) { // sve dok ima pitanja u arrayu
-        osnoveTurizmaPitanja.splice(nasumicno, 1); // izbacuje odabrano pitanje 
+    if (predmet.length > 0) { // sve dok ima pitanja u arrayu
+        predmet.splice(nasumicno, 1); // izbacuje odabrano pitanje 
         divPitanje.innerHTML = odabrano.pitanje; // ispis pitanja
         divOdgovor.innerHTML = odabrano.odgovor; // ispis odgovora
     } else { // kad nestane pitanja
@@ -28,21 +25,19 @@ function odaberiPitanje() {
     }
     // prikaz broja preostalih pitanja u footeru
     maxFooter.innerHTML = max;
-    
+
     // prikaz u konzoli
     console.log("Maksimalan broj: " + max);
     console.log("Nasumično odabran broj: " + nasumicno);
 
     console.log(odabrano.pitanje);
     console.log(odabrano.odgovor);
-
 }
 
-
-// prozivanje učenika za marketing
-function osnoveTurizmaProzovi() {
+// prozovi univerzalno - u predmetImena upiši naziv arraya za imena
+function prozovi(predmetImena) {
     // varijabla unutar funkcije 
-    var ucenici = osnoveTurizmaImena;
+    var ucenici = predmetImena;
 
     var min = 0,
         max = ucenici.length - 1, // maksimalan broj učenika u arrayu 
@@ -60,7 +55,6 @@ function osnoveTurizmaProzovi() {
         return;
     }
 }
-
 
 // prikaz vremena
 /*(function() {

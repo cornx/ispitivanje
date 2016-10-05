@@ -34,17 +34,17 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;1.u &ndash; Osnove turizma</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;3.u &ndash; Marketing u turizmu</a>
             </div>
             <ul class="nav nav-pills desno">
                 <li class="nav-item">
-                    <a class="nav-link bg-primary" href="#">1.u</a>
+                    <a class="nav-link bg-primary" href="index.html">1.u</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link bg-success" href="organizacija.html">2.u</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link bg-danger" href="marketing.html">3.u</a>
+                    <a class="nav-link bg-danger" href="#">3.u</a>
                 </li>
             </ul>
             <!-- /.navbar-collapse -->
@@ -62,9 +62,9 @@
             <div class="col-xs-4 sredina">
                 <h4 class="lijevo">Danas pitamo:</h4>
                 <div id="ucenik">&nbsp;</div>
-                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(osnoveTurizmaImena);">PROZOVI UČENIKA</button>
+                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(marketingImena);">PROZOVI UČENIKA</button>
                 <div class="lijevo">
-                    <h4 id="jos-nisu-pitani"> Još nisu ispitani</h4>
+                    <h4 id="jos-nisu-pitani">Još nisu ispitani</h4>
                     <h5 id="neispitani"></h5></div>
 
                 <div class="row">
@@ -91,7 +91,7 @@
                 <h4 class="lijevo">Pitanje glasi:</h4>
                 <div id="pitanje">&nbsp;</div>
 
-                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(osnoveTurizmaPitanja);">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i> </span>
+                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(marketingPitanja);">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i> </span>
                 <div class="lijevo pokazi-odgovor">
                     <h4 id="nema-odgovora">Odgovor:</h4>
                     <div id="odgovor">&nbsp;</div>
@@ -126,10 +126,9 @@
     <script src="js/odgovori.js"></script>
     <script src="js/pitanja.js"></script>
     <script src="js/arrayOdaberi.js"></script>
-    <!--<script src="js/script.js"></script>-->
     <script>
-        document.querySelector("#neispitani").innerHTML = osnoveTurizmaImena.join(", ");
-        document.querySelector("#max").innerHTML = osnoveTurizmaPitanja.length;
+        document.querySelector("#neispitani").innerHTML = marketingImena.join(", ");
+        document.querySelector("#max").innerHTML = marketingPitanja.length;
     </script>
 </body>
 

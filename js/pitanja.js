@@ -67,16 +67,43 @@ var osnoveTurizmaPitanja = [{
 }];
 
 var organizacijaPitanja = [{
-    pitanje: "",
-    odgovor: ""
+    pitanje: "Prvo pitanje?",
+    odgovor: "prvi odgovor"
+}, {
+    pitanje: "Drugo pitanje",
+    odgovor: "drugi odgovor"
+}, {
+    pitanje: "Treće pitanje",
+    odgovor: "treći odgovor"
 }];
 
 var marketingPitanja = [{
-    pitanje: "",
-    odgovor: ""
+    pitanje: "Prvo pitanje?",
+    odgovor: "prvi odgovor"
+}, {
+    pitanje: "Drugo pitanje",
+    odgovor: "drugi odgovor"
+}, {
+    pitanje: "Treće pitanje",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Četvrto pitanje",
+    odgovor: "četvrti odgovor"
 }];
 
 var turistickaGeoPitanja = [{
-    pitanje: "",
-    odogvor: ""
+    pitanje: "Prvo pitanje?",
+    odgovor: "prvi odgovor"
+}, {
+    pitanje: "Drugo pitanje",
+    odgovor: "drugi odgovor"
+}, {
+    pitanje: "Treće pitanje",
+    odgovor: "treći odgovor"
+}, {
+    pitanje: "Četvrto pitanje",
+    odgovor: "četvrti odgovor"
+}, {
+    pitanje: "Peto pitanje",
+    odgovor: "peti odgovor"
 }];
