@@ -38,7 +38,7 @@
             </div>
             <ul class="nav nav-pills desno">
                 <li class="nav-item">
-                    <a class="nav-link bg-primary" href="index.html">1.u</a>
+                    <a class="nav-link bg-primary" href="osnove-turizma.html">1.u</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link bg-success" href="organizacija.html">2.u</a>
@@ -59,7 +59,7 @@
                 <h1>Osnove turizma</h1></div>
         </div>-->
         <div class="row">
-            <div class="col-xs-4 sredina">
+            <div class="col-xs-12 col-sm-4 sredina">
                 <h4 class="lijevo">Danas pitamo:</h4>
                 <div id="ucenik">&nbsp;</div>
                 <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(marketingImena);">PROZOVI UČENIKA</button>
@@ -68,26 +68,25 @@
                     <h5 id="neispitani"></h5></div>
 
                 <div class="row">
-                    <div class="card card-outline-primary">
-                        <div class="card-block lijevo">
-                            <h4>Kriterij ocjenjivanja</h4>
-
-                            <ul class="ocjene">
-                                <li>3 točna odgovora - 2</li>
-                                <li>4 točna odgovora - 3</li>
-                                <li>5 točnih odgovora - 4</li>
-                                <li>6 i 7 točnih odgovora - 5</li>
-                            </ul>
+                    <div class="col-xs-12">
+                        <div class="card card-outline-primary">
+                            <div class="card-block lijevo">
+                                <h4>Kriterij ocjenjivanja</h4>
+                                <ul class="ocjene">
+                                    <li>3 točna odgovora - 2</li>
+                                    <li>4 točna odgovora - 3</li>
+                                    <li>5 točnih odgovora - 4</li>
+                                    <li>6 i 7 točnih odgovora - 5</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 nevidljiv">
                 <div class="granica"> </div>
             </div>
-            <div class="col-xs-7 sredina">
+            <div class="col-xs-12 col-sm-7 sredina">
                 <h4 class="lijevo">Pitanje glasi:</h4>
                 <div id="pitanje">&nbsp;</div>
 
@@ -97,14 +96,16 @@
                     <div id="odgovor">&nbsp;</div>
                 </div>
                 <div class="row">
-                    <h4 class="lijevo">Uspjeh u odgovaranju:</h4>
-                    <div class="odgovor o1"></div>
-                    <div class="odgovor o2"></div>
-                    <div class="odgovor o3"></div>
-                    <div class="odgovor o4"></div>
-                    <div class="odgovor o5"></div>
-                    <div class="odgovor o6"></div>
-                    <div class="odgovor o7"></div>
+                    <div class="col-xs-12">
+                        <h4 class="lijevo">Uspjeh u odgovaranju:</h4>
+                        <div class="odgovor o1"></div>
+                        <div class="odgovor o2"></div>
+                        <div class="odgovor o3"></div>
+                        <div class="odgovor o4"></div>
+                        <div class="odgovor o5"></div>
+                        <div class="odgovor o6"></div>
+                        <div class="odgovor o7"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +126,7 @@
     <script src="js/ucenici.js"></script>
     <script src="js/odgovori.js"></script>
     <script src="js/pitanja.js"></script>
-    <script src="js/arrayOdaberi.js"></script>
+    <script src="js/script.js"></script>
     <script>
         document.querySelector("#neispitani").innerHTML = marketingImena.join(", ");
         document.querySelector("#max").innerHTML = marketingPitanja.length;

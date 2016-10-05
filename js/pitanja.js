@@ -91,7 +91,7 @@ var marketingPitanja = [{
     odgovor: "četvrti odgovor"
 }];
 
-var turistickaGeoPitanja = [{
+var testPitanja = [{
     pitanje: "Prvo pitanje?",
     odgovor: "prvi odgovor"
 }, {

@@ -24,13 +24,16 @@ body {
     line-height: 1.5
 }
 
-#jos-nisu-pitani, #nema-odgovora {
+#jos-nisu-pitani,
+#nema-odgovora {
     margin-top: 50px;
     border-bottom: 1px dashed #101010;
 }
+
 #nema-odgovora {
-	margin-top: 40px
+    margin-top: 40px
 }
+
 #ucenik,
 #pitanje {
     padding: 10px;
@@ -58,7 +61,7 @@ body {
 #odgovor {
     font-size: 20px;
     visibility: hidden;
-    padding:10px 20px;
+    padding: 10px 20px;
     background: #fdd320;
     border-radius: 4px
 }
@@ -133,4 +136,13 @@ body {
 #max,
 #sat {
     color: #ccc;
+}
+
+@media screen and (max-width:767px) {
+    .granica {
+        display: none;
+    }
+    body {
+        padding-top: 150px;
+    }
 }
