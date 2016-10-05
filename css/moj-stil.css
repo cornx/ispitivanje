@@ -25,11 +25,11 @@ body {
 }
 
 #jos-nisu-pitani, #nema-odgovora {
-    margin-top: 40px;
-    border-bottom: 1px solid #101010;
+    margin-top: 50px;
+    border-bottom: 1px dashed #101010;
 }
 #nema-odgovora {
-	margin-top: 30px
+	margin-top: 40px
 }
 #ucenik,
 #pitanje {
@@ -58,6 +58,9 @@ body {
 #odgovor {
     font-size: 20px;
     visibility: hidden;
+    padding:10px 20px;
+    background: #fdd320;
+    border-radius: 4px
 }
 
 .granica {
