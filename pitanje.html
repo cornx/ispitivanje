@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/moj-stil.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje | Osnove turizma</a>
+            </div>
+            <ul class="nav nav-pills desno">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">1.u</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-success" href="#">2.u</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-danger" href="#">3.u</a>
+                </li>
+            </ul>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-xs-12 naslov">
+                <h1>Osnove turizma</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 sredina">
+                <h3 class="sredina">Danas pitamo</h3>
+                <div id="ucenik">&nbsp;</div>
+                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="osnoveTurizmaProzovi();">PROZOVI UČENIKA</button>
+                <div class="lijevo">
+                    <h3 id="jos-nisu-pitani"> Još nisu ispitani</h3>
+                    <h5 id="neispitani" class="osnoveTurizma"></h5></div>
+
+                <div class="row">
+                    <div class="card card-outline-primary">
+                        <div class="card-block lijevo">
+                            <h4>Kriterij ocjenjivanja</h4>
+
+                            <ul class="ocjene">
+                                <li>3 točna odgovora - 2</li>
+                                <li>4 točna odgovora - 3</li>
+                                <li>5 točnih odgovora - 4</li>
+                                <li>6 i 7 točnih odgovora - 5</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-xs-1">
+                <div class="granica"> </div>
+            </div>
+            <div class="col-xs-7 sredina">
+                <h3 class="lijevo">Pitanje glasi:</h3>
+                <div id="pitanje">&nbsp;</div>
+
+                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje();">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i> </span>
+                <div class="lijevo pokazi-odgovor">
+                    <h3 id="nema-odgovora">Odgovor:</h3>
+                    <div id="odgovor">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <h3 class="lijevo">Uspjeh u odgovaranju:</h3>
+                    <div class="odgovor o1"></div>
+                    <div class="odgovor o2"></div>
+                    <div class="odgovor o3"></div>
+                    <div class="odgovor o4"></div>
+                    <div class="odgovor o5"></div>
+                    <div class="odgovor o6"></div>
+                    <div class="odgovor o7"></div>
+                </div>
+            </div>
+        </div>
+    <div class="row col-xs-12 footer">
+        <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
+        <p class="desno sivo"><span id="sat"></span><span id="max"> </span> </p>
+    </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/ucenici.js"></script>
+    <script src="js/odgovori.js"></script>
+    <script src="js/pitanja.js"></script>
+    <script src="js/arrayOdaberi.js"></script>
+    <!--<script src="js/script.js"></script>-->
+
+</body>
+
+</html>

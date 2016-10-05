@@ -1,0 +1,130 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.sredina {
+    text-align: center;
+}
+
+.lijevo {
+    text-align: left;
+}
+
+.desno {
+    float: right;
+}
+
+#neispitani {
+    font-size: 18px;
+    line-height: 1.5
+}
+
+#jos-nisu-pitani {
+    margin-top: 40px
+}
+
+#ucenik,
+#pitanje {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+    background: rgba(168, 165, 165, 0.08);
+    border-radius: 3px;
+}
+
+.prozovi-ucenika {
+    margin-top: 7px
+}
+
+#ucenik {
+    font-weight: bold;
+    color: #d00d0d
+}
+
+#pitanje {
+    text-align: left
+}
+
+#odgovor {
+    font-size: 20px;
+    visibility: hidden;
+}
+
+.granica {
+    position: relative;
+    border-right: 1px dashed #101010;
+    height: 530px;
+    margin: 10px 35px 0 0;
+}
+
+.odgovor {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px dashed #101010;
+    /*color: #fff;*/
+    display: block;
+    position: relative;
+    padding: 7px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin: 0 2px
+}
+
+.footer {
+    border-top: 1px dashed #101010;
+    margin-top: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.netocno {
+    background: #d00d0d;
+}
+
+.tocno {
+    background: #0a9d0a;
+}
+
+.pokazi-odgovor {
+    margin-bottom: 40px
+}
+
+.naslov {
+    border-bottom: 1px dashed #101010;
+    color: #286090;
+    font-size: 40px;
+    /* text-shadow: 1px 1px 1px #101010;*/
+    margin: 0px 0 20px 0;
+}
+
+.copyleft {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.ocjene {
+    font-size: 16px
+}
+
+.card {
+    margin-top: 100px;
+}
+
+.card-block {
+    padding: 10px 0 0 10px;
+}
+
+#max,
+#sat {
+    color: #ccc;
+}
