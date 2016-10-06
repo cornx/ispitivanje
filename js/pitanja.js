@@ -162,17 +162,21 @@ var organizacijaPitanja = [{
 }];
 
 var marketingPitanja = [{
-    pitanje: "Prvo pitanje?",
-    odgovor: "prvi odgovor"
+    pitanje: "Što je marketing?",
+    odgovor: "Marketing je upravljački proces koji identificira, predviđa i zadovoljava potrebe i želje potrošača ostvarujući profit",
+    slika: "img/slide001.jpg"
 }, {
-    pitanje: "Drugo pitanje",
-    odgovor: "drugi odgovor"
+    pitanje: "Stvara li marketing nove želje i potrebe ili zadovoljava već postojeće?",
+    odgovor: "Marketing ne stvara već zadovoljava već postojeće potrebe. Primjer s automobilom (Mercedes) i mobitelom (iPhone) - potreba za društvenim ugledom i prestižom je zadovoljena tim proizvodima.",
+    slika: "img/slide002.jpg"
 }, {
     pitanje: "Treće pitanje",
-    odgovor: "treći odgovor"
+    odgovor: "treći odgovor",
+    slika: "img/slide003.jpg"
 }, {
     pitanje: "Četvrto pitanje",
-    odgovor: "četvrti odgovor"
+    odgovor: "četvrti odgovor",
+    slika: "img/slide004.jpg"
 }];
 
 var testPitanja = [{

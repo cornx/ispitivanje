@@ -10,17 +10,20 @@ function odaberiPitanje(premetPitanja) {
     // DOM elementi
     var divOdgovor = document.querySelector("#odgovor"),
         divPitanje = document.querySelector("#pitanje"),
+        modal = document.querySelector("#slika"),
         nemaOdgovora = document.querySelector("#nema-odgovora"),
         maxFooter = document.querySelector("#max");
-
     if (predmet.length > 0) { // sve dok ima pitanja u arrayu
         predmet.splice(nasumicno, 1); // izbacuje odabrano pitanje 
         divPitanje.innerHTML = odabrano.pitanje; // ispis pitanja
         divOdgovor.innerHTML = odabrano.odgovor; // ispis odgovora
+        modal.innerHTML = "<img src='"+ odabrano.slika+"' width='auto' height='100%'>"; // prikaz slike
+
     } else { // kad nestane pitanja
         divPitanje.innerHTML = "Nema više pitanja";
         divOdgovor.innerHTML = " ";
         nemaOdgovora.innerHTML = " ";
+        /*modal.innerHTML = "Nema slike";*/
         return; // izađi iz loopa
     }
     // prikaz broja preostalih pitanja u footeru
@@ -32,6 +35,8 @@ function odaberiPitanje(premetPitanja) {
 
     console.log(odabrano.pitanje);
     console.log(odabrano.odgovor);
+
+    console.log("Modal src: "+modal);
 }
 
 // prozovi univerzalno - u predmetImena upiši naziv arraya za imena
