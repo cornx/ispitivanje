@@ -21,22 +21,23 @@ function odaberiPitanje(premetPitanja) {
 
     } else { // kad nestane pitanja
         divPitanje.innerHTML = "Nema više pitanja";
-        divOdgovor.innerHTML = " ";
+        divOdgovor.innerHTML = "Nema više pitanja";
         nemaOdgovora.innerHTML = " ";
-        /*modal.innerHTML = "Nema slike";*/
+        // modal.innerHTML = "Nema slike";
         return; // izađi iz loopa
     }
     // prikaz broja preostalih pitanja u footeru
     maxFooter.innerHTML = max;
 
     // prikaz u konzoli
-    console.log("Maksimalan broj: " + max);
-    console.log("Nasumično odabran broj: " + nasumicno);
+    /*
+        console.log("Maksimalan broj: " + max);
+        console.log("Nasumično odabran broj: " + nasumicno);
 
-    console.log(odabrano.pitanje);
-    console.log(odabrano.odgovor);
+        console.log(odabrano.pitanje);
+        console.log(odabrano.odgovor);
+    */
 
-    console.log("Modal src: " + modal);
 }
 
 // prozovi univerzalno - u predmetImena upiši naziv arraya za imena
@@ -60,6 +61,43 @@ function prozovi(predmetImena) {
         return;
     }
 }
+
+// sakrivanje lijeve strane
+function sakrijLijevuStranu() {
+    document.querySelector("#lijevi-dio-stranice").classList.toggle("sakrij");
+}
+
+/*function ocjeni() {
+    var o1 = document.querySelector(".o1"),
+        o2 = document.querySelector(".o2"),
+        o3 = document.querySelector(".o3"),
+        o4 = document.querySelector(".o4"),
+        o5 = document.querySelector(".o5"),
+        o6 = document.querySelector(".o6"),
+        o7 = document.querySelector(".o7");
+
+        for (i = 0; i < 7; i++) {
+            console.log(i);
+        }
+}*/
+
+/*var close = $(".close"),
+    lijevaStrana = $("#lijevi-dio-stranice");
+close.click(function() {
+    lijevaStrana.toggleClass("sakrij");
+});*/
+
+// izlistava sva pitanja i odgovore i dodavanje jednog ispod drugog (u index.html)
+/*for (i = 0; i < organizacijaPitanja.length; i++) {
+    var nodePitanje = document.createElement("P"),
+        nodeOdgovor = document.createElement("P");
+    var izlistajPitanje = document.createTextNode(organizacijaPitanja[i].pitanje),
+        izlistajOdgovor = document.createTextNode(organizacijaPitanja[i].odgovor);
+    nodePitanje.appendChild(izlistajPitanje);
+    nodeOdgovor.appendChild(izlistajOdgovor);
+    document.getElementById("lista-pitanja").appendChild(nodePitanje);
+    document.getElementById("lista-pitanja").appendChild(nodeOdgovor);
+}*/
 
 // prikaz vremena
 /*(function() {

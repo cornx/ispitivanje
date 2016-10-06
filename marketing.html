@@ -55,7 +55,8 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-4 sredina">
+            <div class="col-xs-12 col-sm-4 sredina" id="lijevi-dio-stranice">
+
                 <h4 class="lijevo">Danas pitamo:</h4>
                 <div id="ucenik">&nbsp;</div>
                 <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(marketingImena);">PROZOVI UČENIKA</button>
@@ -80,7 +81,10 @@
                 </div>
             </div>
             <div class="col-xs-1 nevidljiv">
-                <div class="granica"> </div>
+
+                <div class="granica">
+                    <button type="button" class="close" onclick="sakrijLijevuStranu();"><span aria-hidden="true">&times;</span></button>
+                </div>
             </div>
             <div class="col-xs-12 col-sm-7 sredina">
                 <h4 class="lijevo">Pitanje glasi:</h4>

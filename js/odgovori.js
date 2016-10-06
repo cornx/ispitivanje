@@ -13,6 +13,13 @@
         netocno = "fa fa-thumbs-o-down fa-2x netocno",
         polovicanOdgovor = "fa fa-hand-grab-o fa-2x polovicanOdgovor";
 
+    // sakrivanje lijeve strane
+/*    var = close = $(".close"),
+        lijevaStrana = $("#lijevi-dio-stranice");
+    close.click(function() {
+        lijevaStrana.toggleClass("sakrij");
+    });*/
+
     // prikazi odgovor
     btn.click(function() {
         if (odgovor.css("visibility") === "hidden") {
@@ -21,7 +28,6 @@
             odgovor.css("visibility", "hidden");
         }
     });
-
 
     // točan odgovor (1 klik)
     p1.click(function() {
