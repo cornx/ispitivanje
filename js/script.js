@@ -17,7 +17,7 @@ function odaberiPitanje(premetPitanja) {
         predmet.splice(nasumicno, 1); // izbacuje odabrano pitanje 
         divPitanje.innerHTML = odabrano.pitanje; // ispis pitanja
         divOdgovor.innerHTML = odabrano.odgovor; // ispis odgovora
-        modal.innerHTML = "<img src='"+ odabrano.slika+"' width='auto' height='100%'>"; // prikaz slike
+        modal.innerHTML = "<img src='" + odabrano.slika + "' width='auto' height='100%'>"; // prikaz slike
 
     } else { // kad nestane pitanja
         divPitanje.innerHTML = "Nema više pitanja";
@@ -36,7 +36,7 @@ function odaberiPitanje(premetPitanja) {
     console.log(odabrano.pitanje);
     console.log(odabrano.odgovor);
 
-    console.log("Modal src: "+modal);
+    console.log("Modal src: " + modal);
 }
 
 // prozovi univerzalno - u predmetImena upiši naziv arraya za imena

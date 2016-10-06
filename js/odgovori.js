@@ -10,7 +10,8 @@
         p6 = $(".o6"),
         p7 = $(".o7"),
         tocno = "fa fa-thumbs-o-up fa-2x tocno",
-        netocno = "fa fa-thumbs-o-down fa-2x netocno";
+        netocno = "fa fa-thumbs-o-down fa-2x netocno",
+        polovicanOdgovor = "fa fa-hand-grab-o fa-2x polovicanOdgovor";
 
     // prikazi odgovor
     btn.click(function() {
@@ -22,85 +23,232 @@
     });
 
 
-    // točan odgovor
+    // točan odgovor (1 klik)
     p1.click(function() {
-        p1.addClass(tocno);
+        if (p1.hasClass(netocno)) {
+            p1.attr('class', 'odgovor o1').addClass(tocno);
+        } else if (p1.hasClass(polovicanOdgovor)) {
+            p1.attr('class', 'odgovor o1').addClass(tocno);
+        } else {
+            p1.addClass(tocno);
+        }
     });
     p2.click(function() {
-        p2.addClass(tocno);
+        var krug = p2;
+        if (krug.hasClass(netocno)) {
+            krug.attr('class', 'odgovor o2').addClass(tocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o2').addClass(tocno);
+        } else {
+            krug.addClass(tocno);
+        }
     });
     p3.click(function() {
-        p3.addClass(tocno);
+        var krug = p3;
+        if (krug.hasClass(netocno)) {
+            krug.attr('class', 'odgovor o3').addClass(tocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o3').addClass(tocno);
+        } else {
+            krug.addClass(tocno);
+        }
     });
     p4.click(function() {
-        p4.addClass(tocno);
+        var krug = p4;
+        if (krug.hasClass(netocno)) {
+            krug.attr('class', 'odgovor o4').addClass(tocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o4').addClass(tocno);
+        } else {
+            krug.addClass(tocno);
+        }
     });
     p5.click(function() {
-        p5.addClass(tocno);
+        var krug = p5;
+        if (krug.hasClass(netocno)) {
+            krug.attr('class', 'odgovor o5').addClass(tocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o5').addClass(tocno);
+        } else {
+            krug.addClass(tocno);
+        }
     });
     p6.click(function() {
-        p6.addClass(tocno);
+        var krug = p6;
+        if (krug.hasClass(netocno)) {
+            krug.attr('class', 'odgovor o6').addClass(tocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o6').addClass(tocno);
+        } else {
+            krug.addClass(tocno);
+        }
     });
     p7.click(function() {
-        p7.addClass(tocno);
+        var krug = p7;
+        if (krug.hasClass(netocno)) {
+            krug.attr('class', 'odgovor o7').addClass(tocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o7').addClass(tocno);
+        } else {
+            krug.addClass(tocno);
+        }
     });
 
-    // netočan odgovor
+    // netočan odgovor (2 klika)
     p1.dblclick(function() {
         if (p1.hasClass(tocno)) {
-            p1.removeClass(tocno);
-            p1.addClass(netocno);
+            p1.attr('class', 'odgovor o1').addClass(netocno);
+        } else if (p1.hasClass(polovicanOdgovor)) {
+            p1.attr('class', 'odgovor o1').addClass(netocno);
         } else {
             p1.addClass(netocno);
-        };
+        }
     });
     p2.dblclick(function() {
-        if (p2.hasClass(tocno)) {
-            p2.removeClass(tocno);
-            p2.addClass(netocno);
+        var krug = p2;
+        if (krug.hasClass(tocno)) {
+            krug.attr('class', 'odgovor o2').addClass(netocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o2').addClass(netocno);
         } else {
-            p2.addClass(netocno);
-        };
+            krug.addClass(netocno);
+        }
     });
     p3.dblclick(function() {
-        if (p3.hasClass(tocno)) {
-            p3.removeClass(tocno);
-            p3.addClass(netocno);
+        var krug = p3;
+        if (krug.hasClass(tocno)) {
+            krug.attr('class', 'odgovor o3').addClass(netocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o3').addClass(netocno);
         } else {
-            p3.addClass(netocno);
-        };
+            krug.addClass(netocno);
+        }
     });
     p4.dblclick(function() {
-        if (p4.hasClass(tocno)) {
-            p4.removeClass(tocno);
-            p4.addClass(netocno);
+        var krug = p4;
+        if (krug.hasClass(tocno)) {
+            krug.attr('class', 'odgovor o4').addClass(netocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o4').addClass(netocno);
         } else {
-            p4.addClass(netocno);
-        };
+            krug.addClass(netocno);
+        }
     });
     p5.dblclick(function() {
-        if (p5.hasClass(tocno)) {
-            p5.removeClass(tocno);
-            p5.addClass(netocno);
+        var krug = p5;
+        if (krug.hasClass(tocno)) {
+            krug.attr('class', 'odgovor o5').addClass(netocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o5').addClass(netocno);
         } else {
-            p5.addClass(netocno);
-        };
+            krug.addClass(netocno);
+        }
     });
     p6.dblclick(function() {
-        if (p6.hasClass(tocno)) {
-            p6.removeClass(tocno);
-            p6.addClass(netocno);
+        var krug = p6;
+        if (krug.hasClass(tocno)) {
+            krug.attr('class', 'odgovor o6').addClass(netocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o6').addClass(netocno);
         } else {
-            p6.addClass(netocno);
-        };
+            krug.addClass(netocno);
+        }
     });
     p7.dblclick(function() {
-        if (p7.hasClass(tocno)) {
-            p7.removeClass(tocno);
-            p7.addClass(netocno);
+        var krug = p7;
+        if (krug.hasClass(tocno)) {
+            krug.attr('class', 'odgovor o7').addClass(netocno);
+        } else if (krug.hasClass(polovicanOdgovor)) {
+            krug.attr('class', 'odgovor o7').addClass(netocno);
         } else {
-            p7.addClass(netocno);
-        };
+            krug.addClass(netocno);
+        }
     });
 
+
+
+    // polovičan odgovor
+    p1.click(function(e) {
+        if (e.shiftKey == 1) {
+            if (p1.hasClass(tocno)) {
+                p1.attr('class', 'odgovor o1').addClass(polovicanOdgovor);
+            } else if (p1.hasClass(netocno)) {
+                p1.attr('class', 'odgovor o1').addClass(polovicanOdgovor);
+            } else {
+                p1.addClass(polovicanOdgovor);
+            }
+        }
+    });
+    p2.click(function(e) {
+        var krug = p2;
+        if (e.shiftKey == 1) {
+            if (krug.hasClass(tocno)) {
+                krug.attr('class', 'odgovor o2').addClass(polovicanOdgovor);
+            } else if (krug.hasClass(netocno)) {
+                krug.attr('class', 'odgovor o2').addClass(polovicanOdgovor);
+            } else {
+                krug.addClass(polovicanOdgovor);
+            }
+        }
+    });
+    p3.click(function(e) {
+        var krug = p3;
+        if (e.shiftKey == 1) {
+            if (krug.hasClass(tocno)) {
+                krug.attr('class', 'odgovor o3').addClass(polovicanOdgovor);
+            } else if (krug.hasClass(netocno)) {
+                krug.attr('class', 'odgovor o3').addClass(polovicanOdgovor);
+            } else {
+                krug.addClass(polovicanOdgovor);
+            }
+        }
+    });
+    p4.click(function(e) {
+        var krug = p4;
+        if (e.shiftKey == 1) {
+            if (krug.hasClass(tocno)) {
+                krug.attr('class', 'odgovor o4').addClass(polovicanOdgovor);
+            } else if (krug.hasClass(netocno)) {
+                krug.attr('class', 'odgovor o4').addClass(polovicanOdgovor);
+            } else {
+                krug.addClass(polovicanOdgovor);
+            }
+        }
+    });
+    p5.click(function(e) {
+        var krug = p5;
+        if (e.shiftKey == 1) {
+            if (krug.hasClass(tocno)) {
+                krug.attr('class', 'odgovor o5').addClass(polovicanOdgovor);
+            } else if (krug.hasClass(netocno)) {
+                krug.attr('class', 'odgovor o5').addClass(polovicanOdgovor);
+            } else {
+                krug.addClass(polovicanOdgovor);
+            }
+        }
+    });
+    p6.click(function(e) {
+        var krug = p6;
+        if (e.shiftKey == 1) {
+            if (krug.hasClass(tocno)) {
+                krug.attr('class', 'odgovor o6').addClass(polovicanOdgovor);
+            } else if (krug.hasClass(netocno)) {
+                krug.attr('class', 'odgovor o6').addClass(polovicanOdgovor);
+            } else {
+                krug.addClass(polovicanOdgovor);
+            }
+        }
+    });
+    p7.click(function(e) {
+        var krug = p7;
+        if (e.shiftKey == 1) {
+            if (krug.hasClass(tocno)) {
+                krug.attr('class', 'odgovor o7').addClass(polovicanOdgovor);
+            } else if (krug.hasClass(netocno)) {
+                krug.attr('class', 'odgovor o7').addClass(polovicanOdgovor);
+            } else {
+                krug.addClass(polovicanOdgovor);
+            }
+        }
+    });
 })();
