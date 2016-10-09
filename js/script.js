@@ -64,7 +64,23 @@ function prozovi(predmetImena) {
 
 // sakrivanje lijeve strane
 function sakrijLijevuStranu() {
-    document.querySelector("#lijevi-dio-stranice").classList.toggle("sakrij");
+    var zatvoriButton = document.querySelector("#zatvori"),
+        lijeviDio = document.querySelector("#lijevi-dio-stranice"),
+        desniDio = document.querySelector("#desni-dio-stranice");
+
+    // sakrij lijevi dio stranice
+    lijeviDio.classList.toggle("sakrij");
+    // proširi desni dio dodavanjem bootstrap col-md-11 
+    desniDio.classList.toggle("col-md-11");
+    
+    // promjeni ikonicu na zatvori - otvori buttonu
+    if (zatvoriButton.classList.contains("fa-chevron-left")) {
+        zatvoriButton.classList.remove("fa-chevron-left");
+        zatvoriButton.classList.add("fa-chevron-right");
+    } else if (zatvoriButton.classList.contains("fa-chevron-right")) {
+        zatvoriButton.classList.remove("fa-chevron-right");
+        zatvoriButton.classList.add("fa-chevron-left");
+    }
 }
 
 /*function ocjeni() {

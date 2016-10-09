@@ -161,7 +161,8 @@ body {
 }
 
 .sakrij {
-	visibility: hidden
+	/*visibility: hidden;*/
+    display: none;
 }
 .pokazi {
     color: red

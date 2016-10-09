@@ -84,12 +84,15 @@
                     </div>
                 </div>
             </div>
+            <!-- #lijvei-dio-stranice -->
             <div class="col-xs-1 nevidljiv">
                 <div class="granica">
-                    <button type="button" class="close" onclick="sakrijLijevuStranu();"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" onclick="sakrijLijevuStranu();">
+                        <i class="fa fa-chevron-left" aria-hidden="true" id="zatvori"></i>
+                    </button>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-7 sredina">
+            <div class="col-xs-12 col-sm-7 sredina" id="desni-dio-stranice">
                 <h4 class="lijevo">Pitanje glasi:</h4>
                 <div id="pitanje">&nbsp;</div>
 
@@ -111,6 +114,7 @@
                     </div>
                 </div>
             </div>
+            <!-- #desni-dio-stranice -->
         </div>
         <div class="row col-xs-12 footer">
             <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
