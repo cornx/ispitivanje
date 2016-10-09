@@ -1,11 +1,11 @@
 // odaberi pitanja univerzalno
-function odaberiPitanje(premetPitanja) {
-    var predmet = premetPitanja;
+function odaberiPitanje(predmetPitanja) {
+    var predmet = predmetPitanja;
     // deklariranje varijabli
     var min = 0,
-        max = predmet.length - 1, // maksimalan broj učenika u arrayu 
+        max = predmet.length - 1, // maksimalan broj pitanja u arrayu
         nasumicno = Math.floor(Math.random() * (max - min + 1)) + min, // random broj
-        odabrano = predmet[nasumicno]; // broj učenika po redu (baza 1) i ime učenika
+        odabrano = predmet[nasumicno]; // broj pitanja
 
     // DOM elementi
     var divOdgovor = document.querySelector("#odgovor"),
@@ -13,6 +13,7 @@ function odaberiPitanje(premetPitanja) {
         modal = document.querySelector("#slika"),
         nemaOdgovora = document.querySelector("#nema-odgovora"),
         maxFooter = document.querySelector("#max");
+
     if (predmet.length > 0) { // sve dok ima pitanja u arrayu
         predmet.splice(nasumicno, 1); // izbacuje odabrano pitanje 
         divPitanje.innerHTML = odabrano.pitanje; // ispis pitanja
@@ -29,6 +30,7 @@ function odaberiPitanje(premetPitanja) {
     // prikaz broja preostalih pitanja u footeru
     maxFooter.innerHTML = max;
 
+
     // prikaz u konzoli
     /*
         console.log("Maksimalan broj: " + max);
@@ -37,7 +39,6 @@ function odaberiPitanje(premetPitanja) {
         console.log(odabrano.pitanje);
         console.log(odabrano.odgovor);
     */
-
 }
 
 // prozovi univerzalno - u predmetImena upiši naziv arraya za imena
@@ -48,7 +49,7 @@ function prozovi(predmetImena) {
     var min = 0,
         max = ucenici.length - 1, // maksimalan broj učenika u arrayu 
         nasumicno = Math.floor(Math.random() * (max - min + 1)) + min, // random broj
-        ucenik = ucenici[nasumicno]; // broj učenika po redu (baza 1) i ime učenika
+        ucenik = ucenici[nasumicno]; // broj učenika
     // provjeri ako ima imena u arrayu
     if (ucenici.length > 0) { // sve dok ima imena u arrayu
         ucenici.splice(nasumicno, 1); // izbacuje odabrano ime po rednom broju
@@ -72,7 +73,7 @@ function sakrijLijevuStranu() {
     lijeviDio.classList.toggle("sakrij");
     // proširi desni dio dodavanjem bootstrap col-md-11 
     desniDio.classList.toggle("col-md-11");
-    
+
     // promjeni ikonicu na zatvori - otvori buttonu
     if (zatvoriButton.classList.contains("fa-chevron-left")) {
         zatvoriButton.classList.remove("fa-chevron-left");

@@ -14,11 +14,11 @@
         polovicanOdgovor = "fa fa-hand-grab-o fa-2x polovicanOdgovor";
 
     // sakrivanje lijeve strane
-/*    var = close = $(".close"),
-        lijevaStrana = $("#lijevi-dio-stranice");
-    close.click(function() {
-        lijevaStrana.toggleClass("sakrij");
-    });*/
+    /*    var = close = $(".close"),
+            lijevaStrana = $("#lijevi-dio-stranice");
+        close.click(function() {
+            lijevaStrana.toggleClass("sakrij");
+        });*/
 
     // prikazi odgovor
     btn.click(function() {
@@ -170,8 +170,6 @@
             krug.addClass(netocno);
         }
     });
-
-
 
     // polovičan odgovor
     p1.click(function(e) {
