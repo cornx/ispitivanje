@@ -122,8 +122,11 @@
 
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content sredina" id="slika">
-
+            <div class="modal-content sredina">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="slika"></div>
             </div>
         </div>
     </div>
@@ -131,13 +134,12 @@
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/ucenici.js"></script>
+    <!-- moje skripte -->
     <script src="js/odgovori.js"></script>
-    <script src="js/pitanja.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/script.js"></script>
     <script>
         document.querySelector("#neispitani").innerHTML = osnoveTurizmaImena.join(", ");

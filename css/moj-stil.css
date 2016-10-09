@@ -147,10 +147,12 @@ body {
         padding-top: 150px;
     }
 }
+
 #pokaziSliku {
-	margin-left: -20px;
+    margin-left: -20px;
     color: #0a9d0a
 }
+
 .polovicanOdgovor {
     background: orange;
     -webkit-transform: rotate(90deg);
@@ -161,9 +163,22 @@ body {
 }
 
 .sakrij {
-	/*visibility: hidden;*/
+    /*visibility: hidden;*/
     display: none;
 }
+
 .pokazi {
     color: red
+}
+
+.modal-header {
+    height: 5px;
+    border: none;
+}
+
+.modal-header .close {
+    margin-top: -10px;
+    margin-right: -5px;
+    color: red;
+    opacity: 1;
 }

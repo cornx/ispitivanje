@@ -94,7 +94,7 @@
 
                 <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(testPitanja);">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i> </span>
                 </span><span class="btn btn-lg btn-link">
-                <i class="fa fa-image fa-2x" aria-hidden="true" id="pokaziSliku" data-toggle="modal" data-target="#modal2"></i></span>
+                <i class="fa fa-image fa-2x" aria-hidden="true" id="pokaziSliku" data-toggle="modal" data-target="#modal"></i></span>
                 <div class="lijevo pokazi-odgovor">
                     <h4 id="nema-odgovora">Odgovor</h4>
                     <div id="odgovor">&nbsp;</div>
@@ -125,10 +125,13 @@
     </div>
     <!-- /.container -->
 
-    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content sredina" id="slika">
-
+            <div class="modal-content sredina">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="slika"></div>
             </div>
         </div>
     </div>
@@ -136,13 +139,12 @@
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/ucenici.js"></script>
+    <!-- moje skripte -->
     <script src="js/odgovori.js"></script>
-    <script src="js/pitanja.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/script.js"></script>
     <script>
         document.querySelector("#neispitani").innerHTML = testImena.join(", ");
