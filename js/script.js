@@ -12,15 +12,19 @@ function odaberiPitanje(predmetPitanja) {
         divPitanje = document.querySelector("#pitanje"),
         modal = document.querySelector("#slika"),
         nemaOdgovora = document.querySelector("#nema-odgovora"),
-        maxFooter = document.querySelector("#max");
+        maxFooter = document.querySelector("#max"),
+        slikaButton = document.querySelector("#pokaziSliku");
+
 
     if (predmet.length > 0) { // sve dok ima pitanja u arrayu
         predmet.splice(nasumicno, 1); // izbacuje odabrano pitanje 
         divPitanje.innerHTML = odabrano.pitanje; // ispis pitanja
         divOdgovor.innerHTML = odabrano.odgovor; // ispis odgovora
+
         if (odabrano.slika.length === 0) {
             // ako nema slike, ona prikaži default sliku zbunjenog travolte
             modal.innerHTML = "<img src='img/travolta.gif' width='auto' height='100%'>";
+
         } else {
             // ako odgovor ima sliku, pokaži je
             modal.innerHTML = "<img src='" + odabrano.slika + "' width='auto' height='100%'>";
@@ -30,11 +34,18 @@ function odaberiPitanje(predmetPitanja) {
         divPitanje.innerHTML = "Nema više pitanja";
         divOdgovor.innerHTML = "Nema više pitanja";
         nemaOdgovora.innerHTML = " ";
-        // modal.innerHTML = "Nema slike";
+        modal.innerHTML = "<img src='img/travolta.gif' width='auto' height='100%'>";
         return; // izađi iz loopa
-    }
+    };
     // prikaz broja preostalih pitanja u footeru
     maxFooter.innerHTML = max;
+   
+    // provjeri ako pitanje nema sliku i primjeni class na button
+    if (odabrano.slika.length === 0) {
+        slikaButton.classList.add("nema-slike");
+    } else if (odabrano.slika.length != 0 && slikaButton.classList.contains("nema-slike")) {
+        slikaButton.classList.remove("nema-slike");
+    };
 
     // prikaz u konzoli
     /*
