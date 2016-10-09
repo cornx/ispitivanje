@@ -181,17 +181,22 @@ var marketingPitanja = [{
 
 var testPitanja = [{
     pitanje: "Prvo pitanje?",
-    odgovor: "prvi odgovor"
+    odgovor: "prvi odgovor",
+    slika: "img/slide001.jpg"
 }, {
     pitanje: "Drugo pitanje",
-    odgovor: "drugi odgovor"
+    odgovor: "drugi odgovor",
+    slika:""
 }, {
     pitanje: "Treće pitanje",
-    odgovor: "treći odgovor"
+    odgovor: "treći odgovor",
+    slika:""
 }, {
     pitanje: "Četvrto pitanje",
-    odgovor: "četvrti odgovor"
+    odgovor: "četvrti odgovor",
+    slika:""
 }, {
     pitanje: "Peto pitanje",
-    odgovor: "peti odgovor"
+    odgovor: "peti odgovor",
+    slika:""
 }];
