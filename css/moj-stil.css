@@ -185,3 +185,11 @@ body {
 .nema-slike {
     opacity: 0.2
 }
+img {
+    width: 100%;
+    height: auto;
+}
+img.travolta {
+   width: 300px;
+    height: auto;
+}

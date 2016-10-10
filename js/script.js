@@ -23,18 +23,18 @@ function odaberiPitanje(predmetPitanja) {
 
         if (odabrano.slika.length === 0) {
             // ako nema slike, ona prikaži default sliku zbunjenog travolte
-            modal.innerHTML = "<img src='img/travolta.gif' width='auto' height='100%'>";
+            modal.innerHTML = "<img src='img/travolta.gif' class='travolta'>";
 
         } else {
             // ako odgovor ima sliku, pokaži je
-            modal.innerHTML = "<img src='" + odabrano.slika + "' width='auto' height='100%'>";
+            modal.innerHTML = "<img src='" + odabrano.slika + "'>";
         }
 
     } else { // kad nestane pitanja
         divPitanje.innerHTML = "Nema više pitanja";
         divOdgovor.innerHTML = "Nema više pitanja";
         nemaOdgovora.innerHTML = " ";
-        modal.innerHTML = "<img src='img/travolta.gif' width='auto' height='100%'>";
+        modal.innerHTML = "<img src='img/travolta.gif' class='travolta'>";
         return; // izađi iz loopa
     };
     // prikaz broja preostalih pitanja u footeru
