@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ni po babi ni po stričevima</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/moj-stil.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;1.u - Osnove turizma</a>
+            </div>
+            <ul class="nav nav-pills desno">
+                <li class="nav-item">
+                    <a class="nav-link bg-primary" href="osnove-turizma.html">1.u</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-success" href="prozovi_ucenika_2u.html">2.u</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-danger" href="prozovi_ucenika_3u.html">3.u</a>
+                </li>
+            </ul>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 sredina">
+                <h4 class="lijevo">Danas pitamo:</h4>
+                <div id="ucenik">&nbsp;</div>
+                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(osnoveTurizmaImena);">PROZOVI UČENIKA</button>
+                <div class="lijevo">
+                    <h4 id="jos-nisu-pitani"> Još nisu ispitani</h4>
+                    <h5 id="neispitani"></h5></div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="card card-outline-primary">
+                            <div class="card-block lijevo">
+                                <h4>Kriterij ocjenjivanja</h4>
+
+                                <ul class="ocjene">
+                                    <li>3 točna odgovora - 2</li>
+                                    <li>4 točna odgovora - 3</li>
+                                    <li>5 točnih odgovora - 4</li>
+                                    <li>6 i 7 točnih odgovora - 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 1. u -->
+            <!-- 1 u -->
+            
+        <div class="row col-xs-12 footer">
+            <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
+            <p class="desno sivo"><span id="sat"></span><span id="max"> </span> </p>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content sredina">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="slika"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- moje skripte -->
+    <script src="js/odgovori.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector("#neispitani").innerHTML = osnoveTurizmaImena.join(", ");
+        // document.querySelector("#max").innerHTML = testPitanja.length;
+    </script>
+</body>
+
+</html>
