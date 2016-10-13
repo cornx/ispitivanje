@@ -266,7 +266,7 @@ var osnoveTurizmaPitanja = [{
         slika: "img/marketing/pitanje_010.jpg"
     }, {
         pitanje: "Objasni HOLISTIČKI marketing i navedi njegove osnovne komponente",
-        odgovor: "holistički marketing se zasniva na konceptu „sve je važno”. Nastoji povezati četiri komponente: marketing odnosa, iterni marketing, integrirani marketing i društveno odgovoran marketing",
+        odgovor: "holistički marketing se zasniva na konceptu „sve je važno”. Nastoji povezati četiri komponente: marketing odnosa, interni marketing, integrirani marketing i društveno odgovoran marketing",
         slika: "img/marketing/pitanje_011.jpg"
     }, {
         pitanje: "Objasni DURŠTVENO ODGOVORAN marketing i navedi primjer.",
@@ -274,7 +274,7 @@ var osnoveTurizmaPitanja = [{
         slika: "img/marketing/pitanje_012.jpg"
     }, {
         pitanje: "Objasni ZELENI marketing i navedi primjer.",
-        odgovor: "- kao marketinška strategija koristi se isticanje ekološke osvještenosti<br>- primjer Disney World (recikliranje vode, papira, limenki, krpa…), hotel koji je promijenio šalice iz plastičnih u višekratne i uštedio 6000 USD",
+        odgovor: "- kao marketinška strategija koristi se isticanje ekološke osviještenosti<br>- primjer Disney World (recikliranje vode, papira, limenki, krpa…), hotel koji je promijenio šalice iz plastičnih u višekratne i uštedio 6000 USD",
         slika: "img/marketing/pitanje_013.jpg"
     }, {
         pitanje: "Što je tržište?",

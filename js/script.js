@@ -39,7 +39,7 @@ function odaberiPitanje(predmetPitanja) {
     };
     // prikaz broja preostalih pitanja u footeru
     maxFooter.innerHTML = max;
-   
+
     // provjeri ako pitanje nema sliku i primjeni class na button
     if (odabrano.slika.length === 0) {
         slikaButton.classList.add("nema-slike");
@@ -121,16 +121,16 @@ close.click(function() {
 });*/
 
 // izlistava sva pitanja i odgovore i dodavanje jednog ispod drugog (u index.html)
-/*for (i = 0; i < organizacijaPitanja.length; i++) {
+for (i = 0; i < marketingPitanja.length; i++) {
     var nodePitanje = document.createElement("P"),
         nodeOdgovor = document.createElement("P");
-    var izlistajPitanje = document.createTextNode(organizacijaPitanja[i].pitanje),
-        izlistajOdgovor = document.createTextNode(organizacijaPitanja[i].odgovor);
+    var izlistajPitanje = document.createTextNode(i + 1 + ". " + marketingPitanja[i].pitanje),
+        izlistajOdgovor = document.createTextNode(" - " + marketingPitanja[i].odgovor);
     nodePitanje.appendChild(izlistajPitanje);
     nodeOdgovor.appendChild(izlistajOdgovor);
     document.getElementById("lista-pitanja").appendChild(nodePitanje);
     document.getElementById("lista-pitanja").appendChild(nodeOdgovor);
-}*/
+}
 
 // prikaz vremena
 /*(function() {
