@@ -295,7 +295,11 @@ var osnoveTurizmaPitanja = [{
     }, {
         pitanje: "Na Maslowljevoj ljestvici ljudskih potreba, što uključuje potrebe VIŠEG reda?",
         odgovor: "- društvene potrebe (ljubav, prijateljstvo, pripadanje grupi…) <br>- potrebe ličnosti (samopoštovanje, status, ugled…) <br>- potrebe za samoostvarenjem (samoispunjenje)",
-        slika: ""
+        slika: ""    
+    }, {
+        pitanje: "Koje su glavne značajke GERILSKOG marketinga? Navedi primjer.",
+        odgovor: "- nekonvencionalno <br>- brzo i jeftino <br>- šokantno ali djelotvorno <br>- veliki adut gerilskog marketinga je usmena predaja",
+        slika: "img/marketing/pitanje_019.jpg"
     }],
 
 

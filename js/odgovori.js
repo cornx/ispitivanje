@@ -11,7 +11,9 @@
         p7 = $(".o7"),
         tocno = "fa fa-thumbs-o-up fa-2x tocno",
         netocno = "fa fa-thumbs-o-down fa-2x netocno",
-        polovicanOdgovor = "fa fa-hand-grab-o fa-2x polovicanOdgovor";
+        polovicanOdgovor = "fa fa-hand-grab-o fa-2x polovicanOdgovor",
+        resetiraj = $("#resetiraj"),
+        popunjenOdgovor = $(".odgovor");
 
     // sakrivanje lijeve strane
     /*    var = close = $(".close"),
@@ -253,6 +255,14 @@
             } else {
                 krug.addClass(polovicanOdgovor);
             }
+        }
+    });
+
+    // resetiranje odgovora 
+    resetiraj.click(function() {
+        if (popunjenOdgovor.hasClass(tocno) || popunjenOdgovor.hasClass(netocno) || popunjenOdgovor.hasClass(polovicanOdgovor)) {
+            // stvaramo array sa varijablama i onda ih spajamo sa join 
+            popunjenOdgovor.removeClass([tocno, netocno, polovicanOdgovor].join(' '));
         }
     });
 })();
