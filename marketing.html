@@ -91,7 +91,7 @@
                 <h4 class="lijevo">Pitanje glasi:</h4>
                 <div id="pitanje">&nbsp;</div>
 
-                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(marketingPitanja);">POSTAVI PITANJE</button>
+                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(marketingPitanja); timer();">POSTAVI PITANJE</button>
                 <span class="btn btn-lg btn-link">
                 <i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor"></i>
                 </span><span class="btn btn-lg btn-link">
@@ -113,9 +113,21 @@
                         <div class="odgovor o5"></div>
                         <div class="odgovor o6"></div>
                         <!--<div class="odgovor o7"></div>-->
-
                     </div>
                 </div>
+                <br>
+                <!-- odbrojavanje ### eksperimentalno - skripta counter.js -->
+                <!--<div class="row">
+                    <div class="col-xs-12">
+                        <div class="stoperica">
+                            <button type="button" class="close" id="resetCounter">
+                                <i class="fa fa-close" aria-hidden="true"></i>
+                            </button>
+                            <span>Vrijeme za odgovor: </span>
+                            <h1 id="timer"></h1>
+                        </div>
+                    </div>
+                </div>-->
             </div>
             <!-- #desni-dio-stranice -->
         </div>
@@ -159,9 +171,9 @@
     <script src="js/odgovori.js"></script>
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
+    <!--<script src="js/counter.js"></script>-->
     <script>
         document.querySelector("#neispitani").innerHTML = marketingImena.join(", ");
-
         document.querySelector("#max").innerHTML = marketingPitanja.length;
     </script>
 </body>
