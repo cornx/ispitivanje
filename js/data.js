@@ -269,7 +269,7 @@ var osnoveTurizmaPitanja = [{
         odgovor: "holistički marketing se zasniva na konceptu „sve je važno”. Nastoji povezati četiri komponente: marketing odnosa, interni marketing, integrirani marketing i društveno odgovoran marketing",
         slika: "img/marketing/pitanje_011.jpg"
     }, {
-        pitanje: "Objasni DURŠTVENO ODGOVORAN marketing i navedi primjer.",
+        pitanje: "Objasni DRUŠTVENO ODGOVORAN marketing i navedi primjer.",
         odgovor: "- društveno odgovoran marketing naglašava interes potrošača i društva <br>- marketing se treba temeljiti na društvenoj odgovornosti te brizi o zaštiti okoliša i ograničenim prirodnim resursima <br>- primjer kampanja <i>Moja prva mamografija</i>, reklame protiv pušenja, protiv nošenja krzna...",
         slika: "img/marketing/pitanje_012.jpg"
     }, {
