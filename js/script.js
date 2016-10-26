@@ -100,26 +100,6 @@ function sakrijLijevuStranu() {
     }
 }
 
-/*function ocjeni() {
-    var o1 = document.querySelector(".o1"),
-        o2 = document.querySelector(".o2"),
-        o3 = document.querySelector(".o3"),
-        o4 = document.querySelector(".o4"),
-        o5 = document.querySelector(".o5"),
-        o6 = document.querySelector(".o6"),
-        o7 = document.querySelector(".o7");
-
-        for (i = 0; i < 7; i++) {
-            console.log(i);
-        }
-}*/
-
-/*var close = $(".close"),
-    lijevaStrana = $("#lijevi-dio-stranice");
-close.click(function() {
-    lijevaStrana.toggleClass("sakrij");
-});*/
-
 // izlistava sva pitanja i odgovore i dodavanje jednog ispod drugog (u index.html)
 for (i = 0; i < marketingPitanja.length; i++) {
     var nodePitanje = document.createElement("P"),
@@ -130,6 +110,37 @@ for (i = 0; i < marketingPitanja.length; i++) {
     nodeOdgovor.appendChild(izlistajOdgovor);
     document.getElementById("lista-pitanja").appendChild(nodePitanje);
     document.getElementById("lista-pitanja").appendChild(nodeOdgovor);
+}
+
+// ocjenjivanje 
+function ocjeni() {
+    var odgovor = window.event.target,
+        tocno = "odgovor fa fa-thumbs-o-up fa-2x tocno",
+        netocno = "odgovor fa fa-thumbs-o-down fa-2x netocno",
+        polovicanOdgovor = "odgovor fa fa-hand-grab-o fa-2x polovicanOdgovor",
+        resetiraj = document.getElementById("resetiraj");
+
+    if (event.shiftKey) {
+        odgovor.className = polovicanOdgovor;
+    } else if (event.ctrlKey) {
+        odgovor.className = netocno;
+        /* } else if (event.altKey) {
+             odgovor.className = "odgovor";*/
+    } else {
+        odgovor.className = tocno;
+    }
+}
+
+// resetiranje ocjena
+function resetiraj() {
+    for (var i = 0; i < 7; i++) {
+        document.querySelector(".odgovor.fa").className = "odgovor";
+    }
+}
+
+// pokaži odgovor na pitanje
+function pokaziOdg() {
+    document.getElementById("odgovor").classList.toggle("vidljiv");
 }
 
 // prikaz vremena

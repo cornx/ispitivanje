@@ -58,12 +58,16 @@ body {
     text-align: left
 }
 
-#odgovor {
+.odg {
     font-size: 20px;
     visibility: hidden;
     padding: 10px 20px;
+    border-radius: 4px;
     background: #fdd320;
-    border-radius: 4px
+}
+
+.vidljiv {
+    visibility: visible
 }
 
 .granica {
@@ -182,17 +186,21 @@ body {
     /*color: red;
     opacity: 1;*/
 }
+
 .nema-slike {
     opacity: 0.2
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
 img.travolta {
-   width: 300px;
+    width: 300px;
     height: auto;
 }
+
 .stoperica {
     background: #c60909;
     color: #fff;

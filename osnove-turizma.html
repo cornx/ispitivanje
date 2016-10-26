@@ -96,21 +96,23 @@
                 <i class="fa fa-image fa-2x" aria-hidden="true" id="pokaziSliku" data-toggle="modal" data-target="#modal"></i></span>
                 <div class="lijevo pokazi-odgovor">
                     <h4 id="nema-odgovora">Odgovor</h4>
-                    <div id="odgovor">&nbsp;</div>
+                    <div id="odgovor" class="odg">&nbsp;</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <button type="button" class="close" id="resetiraj">
+                        <button type="button" class="close" id="resetiraj" onclick="resetiraj();">
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                         </button>
                         <h4 class="lijevo">Uspjeh u odgovaranju:</h4>
-                        <div class="odgovor o1"></div>
-                        <div class="odgovor o2"></div>
-                        <div class="odgovor o3"></div>
-                        <div class="odgovor o4"></div>
-                        <div class="odgovor o5"></div>
-                        <div class="odgovor o6"></div>
-                        <div class="odgovor o7"></div>
+                        <div onclick="ocjeni();">
+                            <div class="odgovor"></div>
+                            <div class="odgovor"></div>
+                            <div class="odgovor"></div>
+                            <div class="odgovor"></div>
+                            <div class="odgovor"></div>
+                            <div class="odgovor"></div>
+                            <div class="odgovor"></div>
+                        </div>
                     </div>
                 </div>
             </div>
