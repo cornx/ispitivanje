@@ -142,7 +142,6 @@ function resetiraj() {
 function pokaziOdg() {
     document.getElementById("odgovor").classList.toggle("vidljiv");
 }
-
 // prikaz vremena
 /*(function() {
     function checkTime(i) {
