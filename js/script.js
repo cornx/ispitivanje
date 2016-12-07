@@ -132,6 +132,7 @@ function resetiraj() {
 function pokaziOdg() {
     document.getElementById("odgovor").classList.toggle("vidljiv");
 }
+<<<<<<< HEAD
 
 // dodavanje home linka na sve stranice
 function promjenaLinka() {
@@ -161,16 +162,83 @@ prof.addEventListener("click", function() {
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
+=======
+>>>>>>> de9535ceadc8969ea9c91f208b83bbea4f13ef68
 
-    function startTime() {
-        var today = new Date(),
-            h = checkTime(today.getHours()),
-            m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds());
-        document.getElementById('sat').innerHTML = h + ":" + m + ":" + s;
-        t = setTimeout(function() {
-            startTime()
-        }, 500);
+// dodavanje home linka na sve stranice
+function promjenaLinka() {
+    document.querySelector(".navbar-brand").href = "index.html";
+};
+promjenaLinka();
+
+// prikaz odgovora kad se klikne na moje ime u footeru
+var sviOdgovori = document.querySelector(".svi-odgovori"),
+    prof = document.querySelector(".prof");
+/*
+prof.addEventListener("click", function() {
+    if (sviOdgovori.classList.contains("svi-odgovori-vidljivi")) {
+        sviOdgovori.classList = "svi-odgovori";
+    } else {
+        sviOdgovori.classList = "svi-odgovori-vidljivi";
     }
-    startTime();
-})();*/
+});*/
+// ista stvar samo s jQueryem (3 puta manje teksta)
+/*$(".prof").click(function(){
+    $(".svi-odgovori").toggleClass("svi-odgovori-vidljivi");
+});*/
+
+
+// fade out
+
+function fadeOut(el) {
+    el.style.opacity = 1;
+
+    (function fade() {
+        if ((el.style.opacity -= .1) < 0) {
+            el.style.display = "none";
+        } else {
+            requestAnimationFrame(fade);
+        }
+    })();
+}
+
+// fade in
+
+function fadeIn(el, display) {
+    el.style.opacity = 0;
+    el.style.display = display || "block";
+
+    (function fade() {
+        var val = parseFloat(el.style.opacity);
+        if (!((val += .1) > 1)) {
+            el.style.opacity = val;
+            requestAnimationFrame(fade);
+        }
+    })();
+}
+var el = document.querySelector('.svi-odgovori');
+prof.addEventListener("click", function() {
+            fadeOut(el);
+            fadeIn(el);
+            fadeIn(el, "inline-block");
+        }
+
+
+        // prikaz vremena
+        /*(function() {
+            function checkTime(i) {
+                return (i < 10) ? "0" + i : i;
+            }
+
+            function startTime() {
+                var today = new Date(),
+                    h = checkTime(today.getHours()),
+                    m = checkTime(today.getMinutes()),
+                    s = checkTime(today.getSeconds());
+                document.getElementById('sat').innerHTML = h + ":" + m + ":" + s;
+                t = setTimeout(function() {
+                    startTime()
+                }, 500);
+            }
+            startTime();
+        })();*/
