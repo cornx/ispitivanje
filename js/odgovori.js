@@ -1,3 +1,6 @@
+// ova skripta se više ne koristi u aplikaciji
+// zamjenjena je boljim i kraćim kodom (pogledaj script.js)
+
 (function() {
     var odgovor = $("#odgovor"),
         pokazi = $("#pokazi"),

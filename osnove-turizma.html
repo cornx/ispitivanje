@@ -119,8 +119,15 @@
             <!-- #desni-dio-stranice -->
         </div>
         <div class="row col-xs-12 footer">
-            <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
-            <p class="desno sivo"><span id="sat"></span><span id="max"> </span> </p>
+            <span class="copyleft">&copy;</span> copyleft 2016. &ndash; <span class="prof">Danijel Gavranović, prof.</span>
+            <p class="desno sivo"><span id="sat"></span><span id="max"></span></p>
+        </div>
+
+        <!-- izlistaj sva pitanja i odgovore -->
+        <div class="row col-xs-12 svi-odgovori">
+            <h4 id="nema-odgovora">Sva pitanja i odgovori</h4>
+            <div class="col-xs-12" id="lista-pitanja">
+            </div>
         </div>
     </div>
     <!-- /.container -->
@@ -149,6 +156,7 @@
     <script>
         document.querySelector("#neispitani").innerHTML = osnoveTurizmaImena.join(", ");
         document.querySelector("#max").innerHTML = osnoveTurizmaPitanja.length;
+        izlistajSvaPitanja(osnoveTurizmaPitanja);
     </script>
 </body>
 

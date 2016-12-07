@@ -4,7 +4,11 @@ var osnoveTurizmaImena = ["Danijel", "Denis", "Celine", "Karlo", "Ivan"],
     marketingImena = ["Damir", "Mateo", "Antonio", "Josip", "Marija", "Sara", "Nikolina", "Petra"],
     testImena = ["Učenik 1", "Učenik 2", "Učenik 3", "Učenik 4", "Učenik 5"];
 
-// pitanja po predmetima
+//********************************************************//
+//                                                        //
+//    pitanja po predmetima za 1. krug ispitivanja        //
+//                                                        //
+//********************************************************//
 
 // pitanja osnove turizma
 var osnoveTurizmaPitanja = [{

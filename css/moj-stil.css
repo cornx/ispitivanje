@@ -30,10 +30,6 @@ body {
     border-bottom: 1px dashed #101010;
 }
 
-#nema-odgovora {
-    margin-top: 40px
-}
-
 #ucenik,
 #pitanje {
     padding: 10px;
@@ -140,6 +136,12 @@ body {
 
 #max,
 #sat {
+    color: #fff;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#max:hover {
     color: #ccc;
 }
 
@@ -208,4 +210,72 @@ img.travolta {
     padding: 10px;
     width: 30%;
     text-align: center;
+}
+
+
+/* naslovna linkovi */
+
+.link-main {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    margin: 2px auto;
+    float: left;
+    position: relative;
+    display: inline-block;
+    color: white
+}
+
+@media screen and (max-width:990px) {
+    .granica {
+        display: none;
+        visibility: hidden;
+    }
+    .naslov-2-krug {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px dashed #101010;
+    }
+}
+
+.zuto {
+    font-weight: bold;
+    color: yellowgreen
+}
+
+.prof {
+    cursor: pointer
+}
+
+.svi-odgovori {
+    display: none;
+}
+
+.svi-odgovori-vidljivi {
+    display: block;
+    animation: fadeInOpacity 0.5s 1 ease-in;
+    opacity: 1;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity:0;
+    }
+    100% {
+        opacity: 0;
+        display: none
+        
+    }
 }
