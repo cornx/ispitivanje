@@ -103,7 +103,7 @@ function izlistajSvaPitanja(predmet) {
         document.getElementById("lista-pitanja").appendChild(nodePitanje);
         document.getElementById("lista-pitanja").appendChild(nodeOdgovor);
     }
-}
+};
 
 // ocjenjivanje 
 function ocjeni() {
@@ -120,18 +120,18 @@ function ocjeni() {
     } else {
         odgovor.className = tocno;
     }
-}
+};
 // resetiranje ocjena
 function resetiraj() {
     for (var i = 0; i < 7; i++) {
         document.querySelector(".odgovor.fa").className = "odgovor";
     }
-}
+};
 
 // pokaži odgovor na pitanje
 function pokaziOdg() {
     document.getElementById("odgovor").classList.toggle("vidljiv");
-}
+};
 
 // dodavanje home linka na sve stranice
 function promjenaLinka() {

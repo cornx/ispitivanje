@@ -68,6 +68,42 @@ var osnoveTurizmaPitanja = [{
         odgovor: "- javnost čini bilo koja skupina koja ima stvaran ili potencijalan interes i utjecaj na sposobnost tvrtke da ostvari svoje ciljeve<br>- tipovi javnosti: mediji, vlada, udruge građana… (primjer sa GMO pilećom salamom)",
         slika: ""
     }, {
+        pitanje: "Nabroj neke demografske promjene koje utječu na poslovanje tvrtke.",
+        odgovor: "- promjena dobne strukture, promjene u tipovima obitelji (manje djece, samci, samohrani roditelji), promjene u obrazovanosti stanovništva, promjene tokova migracija, brzi rast populacije",
+        slika: ""
+    }, {
+        pitanje: "Što uključuje gospodarsko okruženje?",
+        odgovor: "- uključuje čimbenike koji utječu na kupovnu moć potrošača i njihov način potrošnje (vrijednost za novac)",
+        slika: ""
+    }, {
+        pitanje: "Objasni primjer kineski \"Mali carevi\" i sindrom \"šest džepova\".",
+        odgovor: "- budući je Kina do nedavno imala politiku jednog djeteta, o njima se brine čak 6 odraslih osoba, tj. udovoljavaju njihovim željama kao što se udovoljavalo kineskim carevima",
+        slika: ""
+    }, {
+        pitanje: "Kako tvrtke trebaju reagirati na promjene u prirodnom okruženju?",
+        odgovor: "- tvrtke moraju prilagoditi svoju proizvodnju i poslovanje kako bi ispunili sve strože ekološke standarde",
+        slika: ""
+    }, {
+        pitanje: "Koja je glavna karakteristika tehnološkog okruženja?",
+        odgovor: "- brze tehnološke promjene koje tuječu na promjene u turističkom posredovanju<br>- internet kao novi distribucijski kanal",
+        slika: ""
+    }, {
+        pitanje: "Na primjeru objasni utjecaj političkog okruženja na turizam neke zemlje ili tvrtke.",
+        odgovor: "- primjer je pad broja gostiju i noćenja za vrijeme velikosrpske agresije na Hrvatsku i za vrijeme sukoba na Kosovu, povećanje poreza na hotelske sobe skuplje od 100 dolara u New Yoruku",
+        slika: "img/marketing/pitanje_020.jpg"
+    }, {
+        pitanje: "",
+        odgovor: "",
+        slika: ""
+    }, {
+        pitanje: "",
+        odgovor: "",
+        slika: ""
+    }, {
+        pitanje: "",
+        odgovor: "",
+        slika: ""
+    }, {
         pitanje: "",
         odgovor: "",
         slika: ""
