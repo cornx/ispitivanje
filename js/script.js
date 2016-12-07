@@ -48,7 +48,7 @@ function odaberiPitanje(predmetPitanja) {
     };
 }
 
-// prozovi univerzalno - u predmetImena upiši naziv arraya za imena
+// prozovi univerzalno - u onClick u html dokumentu upiši naziv arraya za imena
 function prozovi(predmetImena) {
     // varijabla unutar funkcije 
     var ucenici = predmetImena;
@@ -69,7 +69,6 @@ function prozovi(predmetImena) {
         return;
     }
 }
-
 // sakrivanje lijeve strane
 function sakrijLijevuStranu() {
     var zatvoriButton = document.querySelector("#zatvori"),
@@ -143,18 +142,9 @@ promjenaLinka();
 var sviOdgovori = document.querySelector(".svi-odgovori"),
     prof = document.querySelector(".prof");
 
-prof.addEventListener("click", function() {
-    if (sviOdgovori.classList.contains("svi-odgovori-vidljivi")) {
-        sviOdgovori.classList = "svi-odgovori";
-    } else {
-        sviOdgovori.classList = "svi-odgovori-vidljivi";
-    }
+prof.addEventListener("click", function(){
+   sviOdgovori.classList.toggle("svi-odgovori-vidljivi");
 });
-// ista stvar samo s jQueryem (3 puta manje teksta)
-/*$(".prof").click(function(){
-    $(".svi-odgovori").toggleClass("svi-odgovori-vidljivi");
-});*/
-
 
 // prikaz vremena
 /*(function() {

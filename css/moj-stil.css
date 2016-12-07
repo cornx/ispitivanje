@@ -168,10 +168,6 @@ body {
     transform: rotate(90deg);
 }
 
-.sakrij {
-    /*visibility: hidden;*/
-    display: none;
-}
 
 .pokazi {
     color: red
@@ -266,17 +262,9 @@ img.travolta {
     }
 }
 
-@keyframes fadeOutOpacity {
-    0% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-        display: none
-    }
+.sakrij {
+    /*visibility: hidden;*/
+    display: none;
 }
 
 #lista-pitanja p:nth-child(even) {
