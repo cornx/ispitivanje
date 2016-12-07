@@ -34,17 +34,17 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;2.u &ndash; Organizacija poslovanja poduzeća u ugostiteljstvu</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje&emsp;<span class="zuto">2. krug</span>&emsp;| &emsp;3.u &ndash; Marketing u turizmu</a>
             </div>
             <ul class="nav nav-pills desno">
                 <li class="nav-item">
-                    <a class="nav-link bg-primary" href="osnove-turizma.html">1.u</a>
+                    <a class="nav-link bg-primary" href="osnove-turizma-2.html">1.u</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link bg-success" href="#">2.u</a>
+                    <a class="nav-link bg-success" href="organizacija-2.html">2.u</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link bg-danger" href="marketing.html">3.u</a>
+                    <a class="nav-link bg-danger" href="#">3.u</a>
                 </li>
             </ul>
             <!-- /.navbar-collapse -->
@@ -58,9 +58,9 @@
             <div class="col-xs-12 col-sm-4 sredina" id="lijevi-dio-stranice">
                 <h4 class="lijevo">Danas pitamo:</h4>
                 <div id="ucenik">&nbsp;</div>
-                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(organizacijaImena);">PROZOVI UČENIKA</button>
+                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(marketingImena);">PROZOVI UČENIKA</button>
                 <div class="lijevo">
-                    <h4 id="jos-nisu-pitani"> Još nisu ispitani</h4>
+                    <h4 id="jos-nisu-pitani">Još nisu ispitani</h4>
                     <h5 id="neispitani"></h5></div>
 
                 <div class="row">
@@ -68,19 +68,18 @@
                         <div class="card card-outline-primary">
                             <div class="card-block lijevo">
                                 <h4>Kriterij ocjenjivanja</h4>
-
                                 <ul class="ocjene">
                                     <li>3 točna odgovora - 2</li>
                                     <li>4 točna odgovora - 3</li>
                                     <li>5 točnih odgovora - 4</li>
-                                    <li>6 i 7 točnih odgovora - 5</li>
+                                    <li>6 točnih odgovora - 5</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #lijvei-dio-stranice -->
+            <!-- #lijevi-dio-stranice -->
             <div class="col-xs-1 nevidljiv">
                 <div class="granica">
                     <button type="button" class="close" onclick="sakrijLijevuStranu();">
@@ -92,8 +91,10 @@
                 <h4 class="lijevo">Pitanje glasi:</h4>
                 <div id="pitanje">&nbsp;</div>
 
-                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(organizacijaPitanja);">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor" onclick="pokaziOdg();"></i> </span>
-                <span class="btn btn-lg btn-link sakrij"><!-- skrivena tipka jer nema slika -->
+                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(marketingPitanja);">POSTAVI PITANJE</button>
+                <span class="btn btn-lg btn-link">
+                <i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor" onclick="pokaziOdg()"></i>
+                </span><span class="btn btn-lg btn-link">
                 <i class="fa fa-image fa-2x" aria-hidden="true" id="pokaziSliku" data-toggle="modal" data-target="#modal"></i></span>
                 <div class="lijevo pokazi-odgovor">
                     <h4 id="nema-odgovora">Odgovor</h4>
@@ -112,13 +113,28 @@
                             <div class="odgovor"></div>
                             <div class="odgovor"></div>
                             <div class="odgovor"></div>
-                            <div class="odgovor"></div>
                         </div>
                     </div>
                 </div>
+                <br>
+                <!-- odbrojavanje ### eksperimentalno - skripta counter.js -->
+                <!--<div class="row">
+                    <div class="col-xs-12">
+                        <div class="stoperica">
+                            <button type="button" class="close" id="resetCounter">
+                                <i class="fa fa-close" aria-hidden="true"></i>
+                            </button>
+                            <span>Vrijeme za odgovor: </span>
+                            <h1 id="timer"></h1>
+                        </div>
+                    </div>
+                </div>-->
             </div>
             <!-- #desni-dio-stranice -->
         </div>
+
+
+
         <div class="row col-xs-12 footer">
             <span class="copyleft">&copy;</span> copyleft 2016. &ndash; <span class="prof">Danijel Gavranović, prof.</span>
             <p class="desno sivo"><span id="sat"></span><span id="max"></span></p>
@@ -130,6 +146,7 @@
             <div class="col-xs-12" id="lista-pitanja">
             </div>
         </div>
+
     </div>
     <!-- /.container -->
 
@@ -143,6 +160,7 @@
             </div>
         </div>
     </div>
+
     <!-- Modal -->
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
@@ -151,13 +169,14 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- moje skripte -->
-    <!--<script src="js/odgovori.js"></script>-->
-    <script src="js/data.js"></script>
+    <!-- <script src="js/odgovori.js"></script>-->
+    <script src="js/data-2.js"></script>
     <script src="js/script.js"></script>
+    <!--<script src="js/counter.js"></script>-->
     <script>
-        document.querySelector("#neispitani").innerHTML = organizacijaImena.join(", ");
-        document.querySelector("#max").innerHTML = organizacijaPitanja.length;
-        izlistajSvaPitanja(organizacijaPitanja);
+        document.querySelector("#neispitani").innerHTML = marketingImena.join(", ");
+        document.querySelector("#max").innerHTML = marketingPitanja.length;
+        izlistajSvaPitanja(marketingPitanja);
     </script>
 </body>
 

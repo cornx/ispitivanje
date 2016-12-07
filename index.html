@@ -34,20 +34,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;Test stranica</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Ispitivanje &emsp;| &emsp;Odaberi krug ispitivanja</a>
             </div>
-            <ul class="nav nav-pills desno">
-                <li class="nav-item">
-                    <a class="nav-link bg-primary" href="osnove-turizma.html">1.u</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-success" href="organizacija.html">2.u</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-danger" href="marketing.html">3.u</a>
-                </li>
-            </ul>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
@@ -55,78 +43,26 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-4 sredina" id="lijevi-dio-stranice">
-                <h4 class="lijevo">Danas pitamo:</h4>
-                <div id="ucenik">&nbsp;</div>
-                <button type="button" class="btn btn-lg btn-primary prozovi-ucenika" onclick="prozovi(testImena);">PROZOVI UČENIKA</button>
-                <div class="lijevo">
-                    <h4 id="jos-nisu-pitani"> Još nisu ispitani</h4>
-                    <h5 id="neispitani"></h5></div>
-
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="card card-outline-primary">
-                            <div class="card-block lijevo">
-                                <h4>Kriterij ocjenjivanja</h4>
-
-                                <ul class="ocjene">
-                                    <li>3 točna odgovora - 2</li>
-                                    <li>4 točna odgovora - 3</li>
-                                    <li>5 točnih odgovora - 4</li>
-                                    <li>6 i 7 točnih odgovora - 5</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-5">
+                <h4>1. krug ispitivanja</h4>
+                <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                   <a href="osnove-turizma.html"> <button type="button" class="btn btn-primary link-main">1. u - Osnove turizma</button></a>
+                    <a href="organizacija.html"><button type="button" class="btn btn-success link-main">2. u - Organizacija poslovanja poduzeća u ugostiteljstvu</button></a>
+                    <a href="marketing.html"><button type="button" class="btn btn-danger link-main">3. u - Marketing u turizmu</button></a>
                 </div>
             </div>
-            <!-- #lijvi-dio-stranice -->
-            <div class="col-sm-1 nevidljiv">
-                <div class="granica">
-                    <button type="button" class="close" onclick="sakrijLijevuStranu();">
-                        <i class="fa fa-chevron-left" aria-hidden="true" id="zatvori"></i>
-                    </button>
+            <div class="col-lg-1 granica"></div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-5">
+                <h4 class="naslov-2-krug">2. krug ispitivanja</h4>
+                <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                   <a href="osnove-turizma-2.html"> <button type="button" class="btn btn-primary link-main">1. u - Osnove turizma</button></a>
+                    <a href="organizacija-2.html"><button type="button" class="btn btn-success link-main">2. u - Organizacija poslovanja poduzeća u ugostiteljstvu</button></a>
+                    <a href="marketing-2.html"><button type="button" class="btn btn-danger link-main">3. u - Marketing u turizmu</button></a>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-7 sredina" id="desni-dio-stranice">
-                <h4 class="lijevo">Pitanje glasi:</h4>
-                <div id="pitanje">&nbsp;</div>
-
-                <button type="button" class="btn btn-lg btn-danger" onclick="odaberiPitanje(testPitanja);">POSTAVI PITANJE</button><span class="btn btn-lg btn-link"><i class="fa fa-book fa-2x" aria-hidden="true" id="pokaziOdgovor" onclick="pokaziOdg();"></i> </span>
-                <span class="btn btn-lg btn-link">
-                <i class="fa fa-image fa-2x" aria-hidden="true" id="pokaziSliku" data-toggle="modal" data-target="#modal"></i></span>
-                <div class="lijevo pokazi-odgovor">
-                    <h4 id="nema-odgovora">Odgovor</h4>
-                    <div id="odgovor" class="odg">&nbsp;</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <button type="button" class="close" id="resetiraj" onclick="resetiraj();">
-                            <i class="fa fa-refresh" aria-hidden="true"></i>
-                        </button>
-                        <h4 class="lijevo">Uspjeh u odgovaranju:</h4>
-                        <div onclick="ocjeni();">
-                            <div class="odgovor"></div>
-                            <div class="odgovor"></div>
-                            <div class="odgovor"></div>
-                            <div class="odgovor"></div>
-                            <div class="odgovor"></div>
-                            <div class="odgovor"></div>
-                            <div class="odgovor"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #desni-dio-stranice -->
         </div>
-
-        <!-- odkomentiraj za prikazat sva pitanja -->
-        <!--<div class="row">
-            <div class="col-xs-12" id="lista-pitanja">
-            </div>
-        </div>-->
+        <!-- container -->
         <div class="row col-xs-12 footer">
-            <span id="sat" class="lijevo sivo"><a href="prezentacije.html">Prezentacije</a></span> 
             <span class="copyleft">&copy;</span> copyleft 2016. &ndash; Danijel Gavranović, prof.
             <span id="max" class="desno sivo"> </span>
         </div>
@@ -146,18 +82,8 @@
     <!-- Modal -->
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- moje skripte -->
-    <!--<script src="js/odgovori.js"></script>-->
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        document.querySelector("#neispitani").innerHTML = testImena.join(", ");
-        document.querySelector("#max").innerHTML = testPitanja.length;
-    </script>
 </body>
 
 </html>
