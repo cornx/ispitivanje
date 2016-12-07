@@ -271,11 +271,23 @@ img.travolta {
         opacity: 1;
     }
     99% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
         opacity: 0;
         display: none
-        
     }
+}
+
+#lista-pitanja p:nth-child(even) {
+    padding-left: 20px;
+    font-size: 	110%;
+    line-height: 1.6;
+}
+
+#lista-pitanja p:nth-child(odd) {
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 120%;
 }

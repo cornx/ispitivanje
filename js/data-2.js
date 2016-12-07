@@ -5,7 +5,7 @@ var osnoveTurizmaImena = ["Danijel", "Denis", "Celine", "Karlo", "Ivan"],
 
 //********************************************************//
 //                                                        //
-//    pitanja po predmetima za 2. krug ispitivanja        //
+//      pitanja po predmetima za 2. krug ispitivanja      //
 //                                                        //
 //********************************************************//
 
@@ -92,19 +92,35 @@ var osnoveTurizmaPitanja = [{
         odgovor: "- primjer je pad broja gostiju i noćenja za vrijeme velikosrpske agresije na Hrvatsku i za vrijeme sukoba na Kosovu, povećanje poreza na hotelske sobe skuplje od 100 dolara u New Yoruku",
         slika: "img/marketing/pitanje_020.jpg"
     }, {
-        pitanje: "",
-        odgovor: "",
+        pitanje: "Što uključuje kulutrno kruženje?",
+        odgovor: "- institucije i druge sile koje utječu na vrijednosti, doživljaje i stavove u društvu",
         slika: ""
     }, {
-        pitanje: "",
-        odgovor: "",
+        pitanje: "Koje su sile internetskog okruženja? (4)",
+        odgovor: "1. digitalizacija i povezanost <br>2. naglo širenje interneta <br>3. nove vrste posrednika <br>4. prilagođavanje klijentima i njihovim željama",
         slika: ""
     }, {
-        pitanje: "",
-        odgovor: "",
+        pitanje: "Što je digitalizacija a što povezanost?",
+        odgovor: "DIGITALIZACIJA – pretvaranje svih podataka u digitalni oblik<br>POVEZANOST – mogućnost prijenosa podataka s jednog na više mjesta <br>- intranet (povezanost unutar 1 tvrtke), ekstranet (među 2 ili više tvrtki) i internet (globalna mreža)",
         slika: ""
     }, {
-        pitanje: "",
-        odgovor: "",
+        pitanje: "Što je e-poslovanje?",
+        odgovor: "– korištenje  elektroničkih platformi intraneta, ekstraneta i interneta u vođenju poslovanja tvrtke",
+        slika: ""
+    }, {
+        pitanje: "Što je e-trgovina? Navedi jedan primjer.",
+        odgovor: "– proces kupovanja i prodaje u kojemu su internet i moderne tehnologije neizostavni",
+        slika: ""
+    }, {
+        pitanje: "Što je e-marketing? Navedi jedan primjer.",
+        odgovor: "– proces provedbe marketinških aktivnosti uz intenzivnu primjenu informacijskih i komunikacijskih tehnologija",
+        slika: ""
+    }, {
+        pitanje: "Koji su mogući izvori prihoda od e-trgovine?",
+        odgovor: "- prihodi od prodaje proizvoda i usluga – Amazon <br>- prihodi od oglašavanja – Njuškalo <br>- prihodi od sponzorstva – aviokarte.hr <br>- prihodi od članarina i pretplata – bilo koji časopis ili novine <br>- prihodi od izrade profila – linkedIn  <br>- provizije i naknade za transakcije – PayPal  <br>- naknade za istraživanje tržišta i informacije – facebook i google <br>- prihodi od upućivanja – Airbnb, booking.com",
+        slika: ""
+    }, {
+        pitanje: "Koje se nove vrste posrednika javljaju pojavom interneta i digitalnih tehnologija?",
+        odgovor: "– virtualne i fizičko-virtualne tvrtke",
         slika: ""
     }];
