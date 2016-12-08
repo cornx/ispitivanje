@@ -168,7 +168,6 @@ body {
     transform: rotate(90deg);
 }
 
-
 .pokazi {
     color: red
 }
@@ -269,7 +268,7 @@ img.travolta {
 
 #lista-pitanja p:nth-child(even) {
     padding-left: 20px;
-    font-size: 	110%;
+    font-size: 110%;
     line-height: 1.6;
 }
 
@@ -278,4 +277,11 @@ img.travolta {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 120%;
+}
+
+.snoopy {
+    background: url("../img/bg.jpg") bottom right no-repeat;
+    height: 211px;
+    width: 100%;
+    margin: -190px 0 -20px 0;
 }
