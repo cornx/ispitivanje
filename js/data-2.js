@@ -25,7 +25,7 @@ var osnoveTurizmaPitanja = [{
     // marketing pitanja
     marketingPitanja = [{
         pitanje: "Od čega se sastoji marketinško okruženje?",
-        odgovor: "- sastoji se od mikro i makro okruženja?",
+        odgovor: "- sastoji se od mikro i makro okruženja",
         slika: ""
     }, {
         pitanje: "Kakav je odnos između tvrtke i njenog mikrookruženja?",
@@ -33,7 +33,7 @@ var osnoveTurizmaPitanja = [{
         slika: ""
     }, {
         pitanje: "Kakav je odnos između tvrtke i njenog makrookruženja?",
-        odgovor: "- tvrtka nemože utjecati na svoje makrookruženje već mu se prilagođava",
+        odgovor: "- tvrtka ne može utjecati na svoje makrookruženje već mu se prilagođava",
         slika: ""
     }, {
         pitanje: "Od čega se sastoji mikrookruženje?",
@@ -45,7 +45,7 @@ var osnoveTurizmaPitanja = [{
         slika: ""
     }, {
         pitanje: "Što čini tvrtku kao element mikrookruženja?",
-        odgovor: "- tvrtku kao element mikrookruženja čine njeni sastavni dijelovi (npr. uprava, proizvodnja, odjel financija, marketinga, nabave...)<br>- svi djelovi moraju međusobno uskladiti svoje napore u provođenju marketinškog plana",
+        odgovor: "- tvrtku kao element mikrookruženja čine njeni sastavni dijelovi (npr. uprava, proizvodnja, odjel financija, marketinga, nabave...)<br>- svi dijelovi moraju međusobno uskladiti svoje napore u provođenju marketinškog plana",
         slika: ""
     }, {
         pitanje: "Objasni dobavljače kao element mikrookruženja tvrtke.",
@@ -85,14 +85,14 @@ var osnoveTurizmaPitanja = [{
         slika: ""
     }, {
         pitanje: "Koja je glavna karakteristika tehnološkog okruženja?",
-        odgovor: "- brze tehnološke promjene koje tuječu na promjene u turističkom posredovanju<br>- internet kao novi distribucijski kanal",
+        odgovor: "- brze tehnološke promjene koje utječu na promjene u turističkom posredovanju<br>- internet kao novi distribucijski kanal",
         slika: ""
     }, {
         pitanje: "Na primjeru objasni utjecaj političkog okruženja na turizam neke zemlje ili tvrtke.",
-        odgovor: "- primjer je pad broja gostiju i noćenja za vrijeme velikosrpske agresije na Hrvatsku i za vrijeme sukoba na Kosovu, povećanje poreza na hotelske sobe skuplje od 100 dolara u New Yoruku",
+        odgovor: "- primjer je pad broja gostiju i noćenja za vrijeme velikosrpske agresije na Hrvatsku i za vrijeme sukoba na Kosovu, povećanje poreza na hotelske sobe skuplje od 100 dolara u New Yorku",
         slika: "img/marketing/pitanje_020.jpg"
     }, {
-        pitanje: "Što uključuje kulutrno kruženje?",
+        pitanje: "Što uključuje kulturno kruženje?",
         odgovor: "- institucije i druge sile koje utječu na vrijednosti, doživljaje i stavove u društvu",
         slika: ""
     }, {
