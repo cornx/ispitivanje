@@ -120,9 +120,9 @@ function ocjeni() {
         odgovor.className = tocno;
     }
 };
-// resetiranje ocjena
+// resetiranje ocjena (resetiranjem className-a)
 function resetiraj() {
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 7; i++) {   // probaj 7 zamjenit sa elem.length
         document.querySelector(".odgovor.fa").className = "odgovor";
     }
 };
